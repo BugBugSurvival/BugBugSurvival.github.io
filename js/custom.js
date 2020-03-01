@@ -1,3 +1,3 @@
-// BugBugSurvival: Sat Feb 29 2020 15:05:32 GMT+0800 (China Standard Time)
-$(function(){$.backstretch(["/images/wallpaper.png","/images/wallpaper.png","/images/wallpaper.png"],{duration:6e4,fade:1500})});
+// BugBugSurvival: Sun Mar 01 2020 12:33:25 GMT+0800 (China Standard Time)
+$(function(){$.backstretch(["/images/wallpaper1.png","/images/wallpaper2.png","/images/wallpaper3.png"],{duration:6e3,fade:1500})});
 //東雲研究所製　
