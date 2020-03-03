@@ -1,3 +1,0 @@
-// BugBugSurvival: Sun Mar 01 2020 12:33:25 GMT+0800 (China Standard Time)
-document.addEventListener("DOMContentLoaded",function(){if(typeof $.fn.lightGallery==="function"){$(".article").lightGallery({selector:".gallery-item"})}if(typeof $.fn.justifiedGallery==="function"){if($(".justified-gallery > p > .gallery-item").length){$(".justified-gallery > p > .gallery-item").unwrap()}$(".justified-gallery").justifiedGallery()}});
-//東雲研究所製　
