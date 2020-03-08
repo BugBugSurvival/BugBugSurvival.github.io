@@ -1,0 +1,1089 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>新标日初级上册 语法详解 | 東雲研究所</title><meta name="description" content="上册语法点"><meta name="keywords" content="日语,新标日,日语语法"><meta name="author" content="坂本先生"><meta name="copyright" content="坂本先生"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="新标日初级上册 语法详解"><meta name="twitter:description" content="上册语法点"><meta name="twitter:image" content="https://bugbugsurvival.github.io/img/5.JPG"><meta property="og:type" content="article"><meta property="og:title" content="新标日初级上册 语法详解"><meta property="og:url" content="https://bugbugsurvival.github.io/posts/japanese_grammar_01.jp"><meta property="og:site_name" content="東雲研究所"><meta property="og:description" content="上册语法点"><meta property="og:image" content="https://bugbugsurvival.github.io/img/5.JPG"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://bugbugsurvival.github.io/posts/japanese_grammar_01.jp"><link rel="prev" title="新标日初级下册 语法详解" href="https://bugbugsurvival.github.io/posts/japanese_grammar_02.jp.html"><link rel="next" title="雅思单词 第三部分[完]" href="https://bugbugsurvival.github.io/posts/IELTS_vocabulary_part03.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#FFB6C1","bgDark":"#2d3035","position":"bottom-left"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.1.1"></head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">東雲研究所</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 我的</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 追番</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 介绍</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">12</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">10</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">11</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 我的</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 追番</span></a></li><li><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 介绍</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px1aはbです-a是bspan"><span class="toc_mobile_items-text"> 1.AはBです。A是B</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px2aはbではありませんa不是bspan"><span class="toc_mobile_items-text"> 2.AはBではありません，A不是B</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px3aはbですか-a是b吗span"><span class="toc_mobile_items-text"> 3.AはBですか。A是B吗？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px4aのbspan"><span class="toc_mobile_items-text"> 4.AのB</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px6このそのあの名词はですではありません-spanstrongspan"><span class="toc_mobile_items-text"> 6.この&#x2F;その&#x2F;あの＋(名词)は……です&#x2F;ではありません。</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px7aはどれですか-aはどの名词ですか-是哪个spanstrongspan"><span class="toc_mobile_items-text"> 7.Aはどれですか。＝Aはどの＋名词ですか。……是哪个？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px8何ですか-是什么誰ですか-是谁spanstrongspan"><span class="toc_mobile_items-text"> 8.何ですか。……是什么？誰ですか。……是谁？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px9~はいくらですか-多少钱span"><span class="toc_mobile_items-text"> 9.～はいくらですか。……多少钱？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px10ここそこあそこは名ですではありませんですか-这那里是不是吗span"><span class="toc_mobile_items-text"> 10.ここ&#x2F;そこ&#x2F;あそこは＋名＋です&#x2F;ではありません&#x2F;ですか。这&#x2F;那里是&#x2F;不是……（吗）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px11名场所は名場所ですではありませんですか-a存在于b-在吗span"><span class="toc_mobile_items-text"> 11.名（场所）は＋名（場所）です&#x2F;ではありません&#x2F;ですか。A存在于B。……在……（吗）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px12こちらそちらあちらどちらspan"><span class="toc_mobile_items-text"> 12.こちら&#x2F;そちら&#x2F;あちら&#x2F;どちら</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px13名词-も-名词-です-也是-span"><span class="toc_mobile_items-text"> 13.名词 も 名词 です。……也是。</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px14~はaですか-bですか-xx是a还是bspan"><span class="toc_mobile_items-text"> 14.～はAですか。Bですか。xx是A还是B？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px15物人は-地点に-ありますいます-在span"><span class="toc_mobile_items-text"> 15.物&#x2F;人は 地点に あります&#x2F;います。…在…</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px16地点に-物人が-ありますいます-有span"><span class="toc_mobile_items-text"> 16.地点に 物&#x2F;人が あります&#x2F;います。…有…</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px17疑问词も否定-全面否定span"><span class="toc_mobile_items-text"> 17.疑问词+も+否定  全面否定</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px18今~時~分です-现在是几点几分-span"><span class="toc_mobile_items-text"> 18.今～時（～分）です。现在是几点（几分）。</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px19动词ます型span"><span class="toc_mobile_items-text"> 19.动词ます型</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px20名词时间に动词span"><span class="toc_mobile_items-text"> 20.名词（时间）+に＋动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px21strong-styleline-height-32px名时间地点から名时间地点まで动词ですstrongspan"><span class="toc_mobile_items-text"> 21.名（时间&#x2F;地点）+から+名（时间&#x2F;地点）+まで＋动词&#x2F;です</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px22名场所へに动词表示移动的动词span"><span class="toc_mobile_items-text"> 22.名（场所）+へ&#x2F;に＋动词（表示移动的动词）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px23名场所から动词移动span"><span class="toc_mobile_items-text"> 23.名（场所）＋から＋动词（移动）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px24名人と动词和某人一同做某事span"><span class="toc_mobile_items-text"> 24.名（人）+と+动词，和某人一同做某事</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px25名工具手段方法原材料で动词用做某事span"><span class="toc_mobile_items-text"> 25.名（工具，手段，方法，原材料）＋で＋动词，用……做某事</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px26名を动词spanstrongspan"><span class="toc_mobile_items-text"> 26.名+を+动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px27名场所で动词在哪做什么spanstrongspan"><span class="toc_mobile_items-text"> 27.名（场所）＋で＋动词，在哪做什么</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px28名か名spanstrongspan"><span class="toc_mobile_items-text"> 28.名+か+名</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px29~をくださいspanstrongspan"><span class="toc_mobile_items-text"> 29.~をください</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px30aにbを动词a给b做什么可以带双宾语spanstrongspan"><span class="toc_mobile_items-text"> 30.AにBを+动词，A给B做什么（可以带双宾语）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px31aはbにcをあげますa给b-ca把c给bspanstrongspan"><span class="toc_mobile_items-text"> 31.AはBにCをあげます，A给B  C，A把C给B</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px32aはbにcをもらいますa从b得到cb把a给cspanstrongspan"><span class="toc_mobile_items-text"> 32.AはBにCをもらいます，A从B得到C，B把A给C</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32px33形1span-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxい形容词span名词strongspan"><span class="toc_mobile_items-text"> 33.形1（い形容词）＋名词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px34形2な形容词形容動詞な名词的span"><span class="toc_mobile_items-text"> 34.形2（な形容词&#x2F;形容動詞）＋な＋名词，……的……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px35名词は形1ですspan"><span class="toc_mobile_items-text"> 35.名词+は+形1です</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px36名词は形2名词ですspan"><span class="toc_mobile_items-text"> 36.名词+は+形2&#x2F;名词です</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px37どんなですか-什怎么样的span"><span class="toc_mobile_items-text"> 37.どんな…ですか。什&#x2F;怎么样的……？</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px38aはb名が形容词span"><span class="toc_mobile_items-text"> 38.A+は＋B(名)＋が＋形容词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px39aはb名が自动词span"><span class="toc_mobile_items-text"> 39.A+は＋B（名）+が＋自动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px41~からですからだから原因-理由span"><span class="toc_mobile_items-text"> 41.~から&#x2F;ですから（だから），原因、理由</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px42a-は-b-よりc形-です比怎样span"><span class="toc_mobile_items-text"> 42.A は B より+C（形 ）です，……比……怎样</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px43a-は-b-ほど-形1くないです形2ではありませんa不如b怎样span"><span class="toc_mobile_items-text"> 43.A は B ほど+ 形1くないです&#x2F;形2ではありません，A不如B怎样</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px44a-と-b-とどちらがか-a和b哪个span"><span class="toc_mobile_items-text"> 44.A と B と+どちらが……か。A和B哪个……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px45aの中で-bが-いちばんc形です在范围时间场所中最span"><span class="toc_mobile_items-text"> 45.（Aの中）で 、Bが +いちばん+C（形）です，在……（范围&#x2F;时间&#x2F;场所）中，……最……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px46名词数量时间动词span"><span class="toc_mobile_items-text"> 46.名词（数量&#x2F;时间）+动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px47名时间段に名次数动词span"><span class="toc_mobile_items-text"> 47.名（时间段）+に+名（次数）+动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px48名词地点へ动词目的にいきます来ます帰りますspan"><span class="toc_mobile_items-text"> 48.名词（地点）＋へ＋动词（目的）＋に＋いきます&#x2F;来ます&#x2F;帰ります</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px49动词分类span"><span class="toc_mobile_items-text"> 49.动词分类</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px50て形の作り方span"><span class="toc_mobile_items-text"> 50.て形の作り方</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px51动词て形动词span"><span class="toc_mobile_items-text"> 51.动词て形+动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px52动词てから动词span"><span class="toc_mobile_items-text"> 52.动词てから+动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px53动词て形てくださいspan"><span class="toc_mobile_items-text"> 53.动词て形+てください</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px54名场所を动离开经过span"><span class="toc_mobile_items-text"> 54.名（场所）+を＋动（离开&#x2F;经过）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px55名词附着点に动词"><span class="toc_mobile_items-text"> 55.名词（附着点）+に+动词</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px56动词ていますspan"><span class="toc_mobile_items-text"> 56.动词+ています</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px57动词てもいいですかspan"><span class="toc_mobile_items-text"> 57.动词+てもいいです（か）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px58动词てはいけませんだめですか"><span class="toc_mobile_items-text"> 58.动词+てはいけません&#x2F;だめです（か）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px60形1て形1形2名で形2名span"><span class="toc_mobile_items-text"> 60.形1+て+形1；形2&#x2F;名+で形2&#x2F;名；</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px61小句が小句span"><span class="toc_mobile_items-text"> 61.小句が小句</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px62名词がほしいです想要span"><span class="toc_mobile_items-text"> 62.名词+がほしいです，想要……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px63名を动词ます形たいです愿望想做span"><span class="toc_mobile_items-text"> 63.（名を）动词ます形＋たいです，愿望，想做……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px64动词ます形ませんかましょう提议建议邀请span"><span class="toc_mobile_items-text"> 64.动词ます形＋ませんか&#x2F;ましょう，提议，建议，邀请</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px65~~なりますspan"><span class="toc_mobile_items-text"> 65.～～なります</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px66~~しますspan"><span class="toc_mobile_items-text"> 66.～～します</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px67~~ほうがいいです的更span"><span class="toc_mobile_items-text"> 67.～～ほうがいいです，……的更……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px68动词ない形未然形变法span"><span class="toc_mobile_items-text"> 68.动词ない形（未然形）变法</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px69动词ないでくださいspan"><span class="toc_mobile_items-text"> 69.动词+ないでください</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px70动词なければなりませんないといけませんspan"><span class="toc_mobile_items-text"> 70.动词+なければなりません&#x2F;ないといけません</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px71动词なくてもいいですspan"><span class="toc_mobile_items-text"> 71.动词+なくてもいいです</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px72名词が名词ですspan"><span class="toc_mobile_items-text"> 72.名词が名词です</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px73动词的基本形原形辞书形span"><span class="toc_mobile_items-text"> 73.动词的基本形（原形&#x2F;辞书形）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px74~は动词原形ことができます形动すきにがてなどspan"><span class="toc_mobile_items-text"> 74.～は+动词原形＋ことができます&#x2F;形&#x2F;动（すき&#x2F;にがてなど）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px75~は动词原形ことですspan"><span class="toc_mobile_items-text"> 75.～は+动词原形+ことです</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap76~前に-~之前spanspan"><span class="toc_mobile_items-text"> 76.～前に、～，……之前</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap77疑问词かspanspan"><span class="toc_mobile_items-text"> 77.疑问词+か</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px78动词た形span"><span class="toc_mobile_items-text"> 78.动词た形</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px79动词た形ことがありますspan"><span class="toc_mobile_items-text"> 79.动词た形+ことがあります</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px80~後で-~-之后span"><span class="toc_mobile_items-text"> 80.～後で、～  ……之后</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px81动词た形ない形ほうがいいですspan"><span class="toc_mobile_items-text"> 81.动词た形&#x2F;ない形＋ほうがいいです</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px82动词ます形ましょうかspan"><span class="toc_mobile_items-text"> 82.动词ます形+ましょうか</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px83简体形与敬体形的转换span"><span class="toc_mobile_items-text"> 83.简体形与敬体形的转换</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px84~たり~たりしますspan"><span class="toc_mobile_items-text"> 84.～たり～たりします</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px85~たり~たりですspan"><span class="toc_mobile_items-text"> 85.～たり～たりです</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px86~かどうか是否span"><span class="toc_mobile_items-text"> 86.～かどうか，是否……</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px87~かspan"><span class="toc_mobile_items-text"> 87.～か</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px88小句简体と思いますspan"><span class="toc_mobile_items-text"> 88.小句简体+と思います</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px89~と言いますspan"><span class="toc_mobile_items-text"> 89.～と言います</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#span-stylecolor-rgb0-128-255font-size-15px90小句简体のですんですspan"><span class="toc_mobile_items-text"> 90.小句简体＋のです&#x2F;んです</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px1aはbです-a是bspan"><span class="toc-text"> 1.AはBです。A是B</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px2aはbではありませんa不是bspan"><span class="toc-text"> 2.AはBではありません，A不是B</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px3aはbですか-a是b吗span"><span class="toc-text"> 3.AはBですか。A是B吗？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px4aのbspan"><span class="toc-text"> 4.AのB</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px6このそのあの名词はですではありません-spanstrongspan"><span class="toc-text"> 6.この&#x2F;その&#x2F;あの＋(名词)は……です&#x2F;ではありません。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px7aはどれですか-aはどの名词ですか-是哪个spanstrongspan"><span class="toc-text"> 7.Aはどれですか。＝Aはどの＋名词ですか。……是哪个？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px8何ですか-是什么誰ですか-是谁spanstrongspan"><span class="toc-text"> 8.何ですか。……是什么？誰ですか。……是谁？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px9~はいくらですか-多少钱span"><span class="toc-text"> 9.～はいくらですか。……多少钱？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px10ここそこあそこは名ですではありませんですか-这那里是不是吗span"><span class="toc-text"> 10.ここ&#x2F;そこ&#x2F;あそこは＋名＋です&#x2F;ではありません&#x2F;ですか。这&#x2F;那里是&#x2F;不是……（吗）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px11名场所は名場所ですではありませんですか-a存在于b-在吗span"><span class="toc-text"> 11.名（场所）は＋名（場所）です&#x2F;ではありません&#x2F;ですか。A存在于B。……在……（吗）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px12こちらそちらあちらどちらspan"><span class="toc-text"> 12.こちら&#x2F;そちら&#x2F;あちら&#x2F;どちら</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px13名词-も-名词-です-也是-span"><span class="toc-text"> 13.名词 も 名词 です。……也是。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px14~はaですか-bですか-xx是a还是bspan"><span class="toc-text"> 14.～はAですか。Bですか。xx是A还是B？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px15物人は-地点に-ありますいます-在span"><span class="toc-text"> 15.物&#x2F;人は 地点に あります&#x2F;います。…在…</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px16地点に-物人が-ありますいます-有span"><span class="toc-text"> 16.地点に 物&#x2F;人が あります&#x2F;います。…有…</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px17疑问词も否定-全面否定span"><span class="toc-text"> 17.疑问词+も+否定  全面否定</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px18今~時~分です-现在是几点几分-span"><span class="toc-text"> 18.今～時（～分）です。现在是几点（几分）。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px19动词ます型span"><span class="toc-text"> 19.动词ます型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px20名词时间に动词span"><span class="toc-text"> 20.名词（时间）+に＋动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px21strong-styleline-height-32px名时间地点から名时间地点まで动词ですstrongspan"><span class="toc-text"> 21.名（时间&#x2F;地点）+から+名（时间&#x2F;地点）+まで＋动词&#x2F;です</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px22名场所へに动词表示移动的动词span"><span class="toc-text"> 22.名（场所）+へ&#x2F;に＋动词（表示移动的动词）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px23名场所から动词移动span"><span class="toc-text"> 23.名（场所）＋から＋动词（移动）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px24名人と动词和某人一同做某事span"><span class="toc-text"> 24.名（人）+と+动词，和某人一同做某事</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px25名工具手段方法原材料で动词用做某事span"><span class="toc-text"> 25.名（工具，手段，方法，原材料）＋で＋动词，用……做某事</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px26名を动词spanstrongspan"><span class="toc-text"> 26.名+を+动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px27名场所で动词在哪做什么spanstrongspan"><span class="toc-text"> 27.名（场所）＋で＋动词，在哪做什么</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px28名か名spanstrongspan"><span class="toc-text"> 28.名+か+名</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px29~をくださいspanstrongspan"><span class="toc-text"> 29.~をください</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px30aにbを动词a给b做什么可以带双宾语spanstrongspan"><span class="toc-text"> 30.AにBを+动词，A给B做什么（可以带双宾语）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px31aはbにcをあげますa给b-ca把c给bspanstrongspan"><span class="toc-text"> 31.AはBにCをあげます，A给B  C，A把C给B</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px32aはbにcをもらいますa从b得到cb把a给cspanstrongspan"><span class="toc-text"> 32.AはBにCをもらいます，A从B得到C，B把A给C</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32px33形1span-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxい形容词span名词strongspan"><span class="toc-text"> 33.形1（い形容词）＋名词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px34形2な形容词形容動詞な名词的span"><span class="toc-text"> 34.形2（な形容词&#x2F;形容動詞）＋な＋名词，……的……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px35名词は形1ですspan"><span class="toc-text"> 35.名词+は+形1です</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px36名词は形2名词ですspan"><span class="toc-text"> 36.名词+は+形2&#x2F;名词です</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px37どんなですか-什怎么样的span"><span class="toc-text"> 37.どんな…ですか。什&#x2F;怎么样的……？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px38aはb名が形容词span"><span class="toc-text"> 38.A+は＋B(名)＋が＋形容词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px39aはb名が自动词span"><span class="toc-text"> 39.A+は＋B（名）+が＋自动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px41~からですからだから原因-理由span"><span class="toc-text"> 41.~から&#x2F;ですから（だから），原因、理由</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px42a-は-b-よりc形-です比怎样span"><span class="toc-text"> 42.A は B より+C（形 ）です，……比……怎样</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px43a-は-b-ほど-形1くないです形2ではありませんa不如b怎样span"><span class="toc-text"> 43.A は B ほど+ 形1くないです&#x2F;形2ではありません，A不如B怎样</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px44a-と-b-とどちらがか-a和b哪个span"><span class="toc-text"> 44.A と B と+どちらが……か。A和B哪个……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px45aの中で-bが-いちばんc形です在范围时间场所中最span"><span class="toc-text"> 45.（Aの中）で 、Bが +いちばん+C（形）です，在……（范围&#x2F;时间&#x2F;场所）中，……最……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px46名词数量时间动词span"><span class="toc-text"> 46.名词（数量&#x2F;时间）+动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px47名时间段に名次数动词span"><span class="toc-text"> 47.名（时间段）+に+名（次数）+动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px48名词地点へ动词目的にいきます来ます帰りますspan"><span class="toc-text"> 48.名词（地点）＋へ＋动词（目的）＋に＋いきます&#x2F;来ます&#x2F;帰ります</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px49动词分类span"><span class="toc-text"> 49.动词分类</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px50て形の作り方span"><span class="toc-text"> 50.て形の作り方</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px51动词て形动词span"><span class="toc-text"> 51.动词て形+动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px52动词てから动词span"><span class="toc-text"> 52.动词てから+动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px53动词て形てくださいspan"><span class="toc-text"> 53.动词て形+てください</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px54名场所を动离开经过span"><span class="toc-text"> 54.名（场所）+を＋动（离开&#x2F;经过）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px55名词附着点に动词"><span class="toc-text"> 55.名词（附着点）+に+动词</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px56动词ていますspan"><span class="toc-text"> 56.动词+ています</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px57动词てもいいですかspan"><span class="toc-text"> 57.动词+てもいいです（か）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px58动词てはいけませんだめですか"><span class="toc-text"> 58.动词+てはいけません&#x2F;だめです（か）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px60形1て形1形2名で形2名span"><span class="toc-text"> 60.形1+て+形1；形2&#x2F;名+で形2&#x2F;名；</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px61小句が小句span"><span class="toc-text"> 61.小句が小句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px62名词がほしいです想要span"><span class="toc-text"> 62.名词+がほしいです，想要……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px63名を动词ます形たいです愿望想做span"><span class="toc-text"> 63.（名を）动词ます形＋たいです，愿望，想做……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px64动词ます形ませんかましょう提议建议邀请span"><span class="toc-text"> 64.动词ます形＋ませんか&#x2F;ましょう，提议，建议，邀请</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px65~~なりますspan"><span class="toc-text"> 65.～～なります</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px66~~しますspan"><span class="toc-text"> 66.～～します</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px67~~ほうがいいです的更span"><span class="toc-text"> 67.～～ほうがいいです，……的更……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px68动词ない形未然形变法span"><span class="toc-text"> 68.动词ない形（未然形）变法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px69动词ないでくださいspan"><span class="toc-text"> 69.动词+ないでください</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px70动词なければなりませんないといけませんspan"><span class="toc-text"> 70.动词+なければなりません&#x2F;ないといけません</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px71动词なくてもいいですspan"><span class="toc-text"> 71.动词+なくてもいいです</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px72名词が名词ですspan"><span class="toc-text"> 72.名词が名词です</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px73动词的基本形原形辞书形span"><span class="toc-text"> 73.动词的基本形（原形&#x2F;辞书形）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px74~は动词原形ことができます形动すきにがてなどspan"><span class="toc-text"> 74.～は+动词原形＋ことができます&#x2F;形&#x2F;动（すき&#x2F;にがてなど）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px75~は动词原形ことですspan"><span class="toc-text"> 75.～は+动词原形+ことです</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap76~前に-~之前spanspan"><span class="toc-text"> 76.～前に、～，……之前</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap77疑问词かspanspan"><span class="toc-text"> 77.疑问词+か</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px78动词た形span"><span class="toc-text"> 78.动词た形</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px79动词た形ことがありますspan"><span class="toc-text"> 79.动词た形+ことがあります</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px80~後で-~-之后span"><span class="toc-text"> 80.～後で、～  ……之后</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px81动词た形ない形ほうがいいですspan"><span class="toc-text"> 81.动词た形&#x2F;ない形＋ほうがいいです</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px82动词ます形ましょうかspan"><span class="toc-text"> 82.动词ます形+ましょうか</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px83简体形与敬体形的转换span"><span class="toc-text"> 83.简体形与敬体形的转换</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px84~たり~たりしますspan"><span class="toc-text"> 84.～たり～たりします</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px85~たり~たりですspan"><span class="toc-text"> 85.～たり～たりです</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px86~かどうか是否span"><span class="toc-text"> 86.～かどうか，是否……</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px87~かspan"><span class="toc-text"> 87.～か</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px88小句简体と思いますspan"><span class="toc-text"> 88.小句简体+と思います</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px89~と言いますspan"><span class="toc-text"> 89.～と言います</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#span-stylecolor-rgb0-128-255font-size-15px90小句简体のですんですspan"><span class="toc-text"> 90.小句简体＋のです&#x2F;んです</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(/img/5.JPG)"><div id="post-info"><div id="post-title"><div class="posttitle">新标日初级上册 语法详解</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-02-01<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-02-01</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%97%A5%E8%AF%AD/">日语</a><i class="fa fa-angle-right fa-fw" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%97%A5%E8%AF%AD/%E6%96%B0%E6%A0%87%E6%97%A5%E5%88%9D%E7%BA%A7%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">新标日初级语法笔记</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">10.1k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 34 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><h1 id="span-stylecolor-rgb0-128-255font-size-15px1aはbです-a是bspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px1aはbです-a是bspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">1.AはBです。A是B</span></h1>
+<p>A、B：体言（名词、代词、数量词）</p>
+<p>Aは：主语部分，Bです：谓语部分（谓语放在句末）</p>
+<p>です：判断动词“是”</p>
+<p>は：提示主题A（提示要说明、描述的对象），单拿出来没有含义。</p>
+<p>主题相同时可以省略（主题≠主语）。<span style="font-size: 15px;color: rgb(61, 167, 66);">下文中括号里的均可省略，或已省略</span>。</p>
+<p>例：</p>
+<p>①二宮和也<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>アイドル<span style="font-size: 15px;color: rgb(61, 167, 66);">です</span>。イケメンです。<span style="font-size: 15px;line-height: 1.6;">二宫和也是个偶像。他是个帅哥。</span></p>
+<p>②二宮和也<span style="font-size: 15px;color: rgb(61, 167, 66);">です</span>。俺<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>かっこいい男だぜ。<span style="font-size: 15px;line-height: 1.6;">I’m ninomiya kazunari，I’m a good-looking guy。</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">③うちはの家紋<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">は</span>うちわ。宇智波族家纹是团扇。</span></p>
+<span style="line-height: 1.6;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px2aはbではありませんa不是bspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px2aはbではありませんa不是bspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">2.AはBではありません，A不是B</span></h1>
+<p><span style="line-height: 1.6;font-size: 15px;">では/じゃありません：です的否定。じゃ是口语形式</span></p>
+<p>例：</p>
+<p>中村さんは店員では/じゃありません。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px3aはbですか-a是b吗span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px3aはbですか-a是b吗span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">3.AはBですか。A是B吗？</span></h1>
+<p>か：疑问词，语调上扬。问句尾是句号</p>
+<p>例：</p>
+<p>①（）パリーストンさんですか。<span style="font-size: 15px;line-height: 1.6;">你是帕里斯通先生吗？</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">肯定回答：</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">はい、（）パリーストンです。是的，我是帕里斯通。</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">或はい、そうです。是的，是那样的。</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">或はい。是的。</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">否定回答：</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">いいえ、（）パリーストン<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">ではありません</span>。不是，我不是帕里斯通。</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">或いいえ、違います。不是，不是那样的。（后面还可补充。）</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">或いいえ。不是。</span></p>
+<span style="line-height: 1.6;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 1.6;">②-</span><span style="font-size: 15px;line-height: 1.6;text-decoration: underline;">パリーストンさん</span><span style="font-size: 15px;line-height: 1.6;">はマジシャンですか。你是魔术师吗？</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">-いいえ、（違います。）（）ハンターです。不，我是个猎人。</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">（此句中已知对方是谁时，直接用</span><span style="font-size: 15px;line-height: 1.6;text-decoration: underline;">名字作代词你。</span><span style="font-size: 15px;line-height: 1.6;">日语中常见，用名字代替人称代词。）<br>
+</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">不知道的回答：</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">分かりません。</span></p>
+<span style="line-height: 1.6;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px4aのbspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px4aのbspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">4.AのB</span></h1>
+<p>连接名词和名词。</p>
+<p>①表示所属，机构，国家或属性</p>
+<p>私<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>漫画　<span style="font-size: 15px;line-height: 1.6;">我</span><span style="font-size: 15px;color: rgb(61, 167, 66);">的</span><span style="font-size: 15px;line-height: 1.6;">漫画书</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">半澤直樹さんは東京バンク</span><span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">の</span><span style="font-size: 15px;line-height: 25.6px;">社員です。半泽直树是东京银行的职员。</span></p>
+<p>②描述内容性质</p>
+<p>何<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>雑誌（这是什么杂志？）<br>
+</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">日本語</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">の</span><span style="font-size: 15px;line-height: 25.6px;">辞書（日语词典。中文不说日语“的”词典）</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">布<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">の</span>鞄（布包）</span></p>
+<p><span style="font-size: 15px;text-decoration: underline;">アメリカ人の</span>先生（美国老师）</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">③产地来源</span></p>
+<p>ドイツ<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>時計  德国（造）表<br>
+</p>
+<p>イタリア<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>ワイン   意大利（产）酒</p>
+<p>④准体助词</p>
+<p>ーあれは誰の車ですか。</p>
+<p>―会社<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>です。公司的（车）。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">ヒカル</span><span style="font-size: 15px;color: rgb(61, 167, 66);">の</span><span style="font-size: 15px;line-height: 25.6px;">兄さん</span><br>
+</p>
+<p><span style="line-height: 1.6;font-size: 15px;">意思一：hikaru‘s brother </span></p>
+<p>意思二：brother hikaru。</p>
+
+<p>＊<span style="font-size: 15px;line-height: 25.6px;">在日语中不管名词之间是什么关系，一般加の。</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;color: rgb(0, 128, 255);">5.これ/それ/あれはAです/ではありません/</span># <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">ですか。这是……/那是……（吗）</span></strong></span></p>
+<p>说话人和听话人有一段距离时：<span style="font-size: 15px;line-height: 1.6;">离说话人近的用これ，离说话人远离听话人近的用それ，离两人都远的用あれ。</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">说话人和听话人距离近时：距离两人都近的用これ，远一点的用それ，再远的用</span><span style="font-size: 15px;line-height: 25.6px;">あれ</span><span style="font-size: 15px;line-height: 1.6;">。</span></p>
+<span style="line-height: 1.6;font-size: 15px;">
+</span>
+<p>例：</p>
+<p><span style="font-size: 15px;color: rgb(61, 167, 66);">これ</span>はラメンです。这是拉面。</p>
+<p><span style="font-size: 15px;color: rgb(61, 167, 66);">それ</span>は寿司です。那是寿司。</p>
+<p><span style="font-size: 15px;color: rgb(61, 167, 66);">あれ</span>はペキンダックです。那是北京烤鸭。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px6このそのあの名词はですではありません-spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px6このそのあの名词はですではありません-spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">6.この/その/あの＋(名词)は……です/ではありません。</span></strong></span></h1>
+<p><span style="line-height: 1.6;font-size: 15px;">この/その/あの：连体词，后加名词。位置关系与これ，それ，あれ相同。</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">例：</span></p>
+<p><span style="font-size: 15px;color: rgb(61, 167, 66);"><span style="font-size: 15px;line-height: 1.6;">この</span></span><span style="font-size: 15px;line-height: 1.6;text-decoration: underline;">カメラ</span><span style="font-size: 15px;line-height: 1.6;">は梶さんの（）です。＝<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">これ</span>は梶さんのカメラです。这是梶桑的相机。</span></p>
+
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px7aはどれですか-aはどの名词ですか-是哪个spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px7aはどれですか-aはどの名词ですか-是哪个spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">7.Aはどれですか。＝Aはどの＋名词ですか。……是哪个？</span></strong></span></h1>
+<p><span style="line-height: 1.6;font-size: 15px;">どの、どれ：在三个以上的事物中，不确定是哪一个时用的疑问词</span></p>
+<span style="line-height: 1.6;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 1.6;">例：</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">寺島さんの眼鏡は<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">どれ</span>ですか。寺岛的眼镜是哪个？</span></p>
+
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px8何ですか-是什么誰ですか-是谁spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px8何ですか-是什么誰ですか-是谁spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">8.何ですか。……是什么？誰ですか。……是谁？</span></strong></span></h1>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px9~はいくらですか-多少钱span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px9~はいくらですか-多少钱span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">9.～はいくらですか。……多少钱？</span></h1>
+<p>例：</p>
+<p>その消しゴム<span style="font-size: 15px;color: rgb(61, 167, 66);">はいくらですか。</span>那块橡皮多少钱？</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px10ここそこあそこは名ですではありませんですか-这那里是不是吗span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px10ここそこあそこは名ですではありませんですか-这那里是不是吗span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">10.ここ/そこ/あそこは＋名＋です/ではありません/ですか。这/那里是/不是……（吗）</span></h1>
+<p>用于介绍</p>
+<p>例：</p>
+<p>①<span style="font-size: 15px;color: rgb(61, 167, 66);">ここはどこですか。</span>这里是哪？</p>
+<p>②<span style="font-size: 15px;color: rgb(61, 167, 66);">あそこは</span>会議室<span style="font-size: 15px;color: rgb(61, 167, 66);">です/ではありません/ですか。</span>那里是/不是会议室（吗）。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px11名场所は名場所ですではありませんですか-a存在于b-在吗span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px11名场所は名場所ですではありませんですか-a存在于b-在吗span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">11.名（场所）は＋名（場所）です/ではありません/ですか。A存在于B。……在……（吗）</span></h1>
+<p>告知位置</p>
+<p>例：</p>
+<p>①カフェ<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span><span style="font-size: 15px;color: rgb(61, 167, 66);text-decoration: underline;">どこ</span><span style="font-size: 15px;color: rgb(61, 167, 66);">ですか。</span>カフェは二階です。咖啡厅<span style="font-size: 15px;text-decoration: underline;">在哪</span>？咖啡厅在二楼。<br>
+</p>
+<p>②櫻井さん<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>事務所<span style="font-size: 15px;color: rgb(61, 167, 66);">です</span>。樱井先生在事务所。</p>
+<p>区分：<span style="font-size: 15px;line-height: 1.6;text-decoration: underline;">ここ</span><span style="font-size: 15px;line-height: 1.6;">はトイレです。这儿是厕所。（将ここ作为话题来阐述。）</span></p>
+<p><span style="font-size: 15px;text-decoration: underline;">トイレ</span>はここです。厕所在这儿。（将トイレ作为话题来阐述。）</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px12こちらそちらあちらどちらspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px12こちらそちらあちらどちらspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">12.こちら/そちら/あちら/どちら</span></h1>
+<p>①方向：</p>
+<p>xxは<span style="font-size: 15px;color: rgb(61, 167, 66);">あちら</span>です。xx在那儿。</p>
+<p><span style="font-size: 15px;color: rgb(61, 167, 66);">こちら</span>へどうぞ。这<span style="font-size: 15px;text-decoration: underline;">边</span>请。</p>
+<p>②人：</p>
+<p><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">こちら</span><span style="font-size: 15px;line-height: 25.6px;">はミラさんです。这位是米拉小姐。</span></p>
+<p>③<span style="font-size: 15px;line-height: 1.6;">“ここ/そこ/あそこ/どこ”的礼貌说法：</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">会社は<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">どちら</span>ですか。你的公司在哪？/你是哪个公司的？（包含两种含义，根据上下文判断）</span></p>
+<p>④こちら/そちら/どちら：双方中的一方，二选一</p>
+<p><span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">こちら</span><span style="font-size: 15px;line-height: 1.6;">こそよろしく。我（这一方）才要请你多多关照呢。</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">こちらはｘｘ会社です。这儿是xx公司、</span></p>
+<p>どちらが勝者ですか。谁赢了？</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px13名词-も-名词-です-也是-span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px13名词-も-名词-です-也是-span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">13.名词 も 名词 です。……也是。</span></h1>
+<p>は可以放在哪，も就可以放在哪</p>
+
+<p>例：</p>
+<p>①朴さんは声優です。花澤さん<span style="font-size: 15px;color: rgb(61, 167, 66);">も</span>声優です。朴小姐是声优。花泽小姐也是声优。</p>
+<p>②李さん<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>学生<span style="font-size: 15px;text-decoration: underline;">では</span>ありません。先生で<span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;color: rgb(61, 167, 66);">も</span></span>ありません。森さん<span style="font-size: 15px;color: rgb(61, 167, 66);">も</span>先生ではありません。小李不是学生，也不是老师。森也不是老师。</p>
+<p>③林さん<span style="font-size: 15px;color: rgb(61, 167, 66);">も</span>小林さん<span style="font-size: 15px;color: rgb(61, 167, 66);">も</span>役者です。林桑和小林桑<span style="font-size: 15px;text-decoration: underline;">都是</span>演员。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px14~はaですか-bですか-xx是a还是bspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px14~はaですか-bですか-xx是a还是bspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">14.～はAですか。Bですか。xx是A还是B？</span></h1>
+<p>选择疑问句，可列举2个及以上的词句，例举不确定的选项。不用回答はい/いいえ。</p>
+<p>例：</p>
+<p>-今日は水曜日<span style="font-size: 15px;color: rgb(61, 167, 66);">ですか。</span>木曜日<span style="font-size: 15px;color: rgb(61, 167, 66);">ですか。</span>今天是星期三还是星期四？</p>
+<p>-<span style="font-size: 15px;line-height: 25.6px;">木曜日です。<span style="font-size: 15px;line-height: 25.6px;">星期四。</span></span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px15物人は-地点に-ありますいます-在span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px15物人は-地点に-ありますいます-在span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">15.物/人は 地点に あります/います。…在…</span></h1>
+<p><span style="font-size: 15px;line-height: 1.6;">重点在に前，问地点、表示位置</span><br>
+</p>
+<p>は：存在的主体</p>
+<p>に：存在的地点</p>
+<p>あります：无自由行动意志的，如植物、非生物</p>
+<p>います：有自由行动意志的，如人、动物等</p>
+
+<p>例：</p>
+<p>①図書館<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>博物館の隣<span style="font-size: 15px;color: rgb(61, 167, 66);">にあります/ありません（か）。</span>图书馆在/不在博物馆旁边（吗）</p>
+<p>②犬<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>部屋にいません。庭<span style="font-size: 15px;color: rgb(61, 167, 66);">にいます。</span>狗不在屋子里，它在院子里。</p>
+<p>③先生<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>教室<span style="font-size: 15px;color: rgb(61, 167, 66);">にいますか。</span>事務室<span style="font-size: 15px;color: rgb(61, 167, 66);">にいますか。</span>老师在教室里还是在办公室？</p>
+<p>④疑問句：-小野さんの家は<span style="font-size: 15px;color: rgb(61, 167, 66);">どこ</span>ですか/<span style="font-size: 15px;color: rgb(61, 167, 66);">どこ</span>にありますか。小野先生的家在哪？－東京<span style="font-size: 15px;color: rgb(61, 167, 66);">です</span>/東京<span style="font-size: 15px;color: rgb(61, 167, 66);">にあります。</span>（两种答法可以混用）在东京。</p>
+<p>⑤誰が部屋にいますか。（疑问词作主语时，は改成が）</p>
+<span style="color: rgb(0, 122, 170);line-height: 32px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px16地点に-物人が-ありますいます-有span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px16地点に-物人が-ありますいます-有span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">16.地点に 物/人が あります/います。…有…</span></h1>
+<p>に：存在的地点</p>
+<p>が：主语，存在的人/物</p>
+<p>例：</p>
+<p>①鞄<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>ノート<span style="font-size: 15px;color: rgb(61, 167, 66);">があります。</span>ぺん<span style="font-size: 15px;color: rgb(61, 167, 66);">もあります。</span>书包里有本笔记本。还有支笔。</p>
+<p>＝鞄にノート<span style="font-size: 15px;color: rgb(61, 167, 66);">と</span>ぺんがあります。<span style="font-size: 15px;color: rgb(61, 167, 66);">（A<strong style="line-height: 25.6px;">とB：并列）</strong></span>书包里有本笔记本和一支笔。</p>
+<p>②車の横に犬がいます。车旁边有只狗。</p>
+<p>有时并不表示某个地点有什么，而表示抽象的拥有：</p>
+<p>車がありますか。家がありますか。你有车吗？你有房吗？</p>
+<p>約束があります。我有约。</p>
+<p><span style="color: rgb(0, 122, 170);line-height: 32px;font-size: 15px;"><strong style="line-height: 32px;"><br>
+</strong></span></p>
+<p>15&16（～は～にあります＆～に～があります）区分：</p>
+<p>は在前：强调地点，寻找某人某物（在哪儿）</p>
+<p>に在前：强调物体，介绍某个场所（有什么）</p>
+<p><span style="color: rgb(0, 122, 170);line-height: 32px;font-size: 15px;"><strong style="line-height: 32px;"><br>
+</strong></span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px17疑问词も否定-全面否定span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px17疑问词も否定-全面否定span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">17.疑问词+も+否定  全面否定</span></h1>
+<p>例：</p>
+<p>①教室に<span style="font-size: 15px;color: rgb(61, 167, 66);">誰もいません。</span>教室里一个人也没有。</p>
+<p>②冷蔵庫に何がありますか。（）<span style="font-size: 15px;color: rgb(61, 167, 66);">何もありません。</span>冰箱里有什么？（冰箱里）什么都没有。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px18今~時~分です-现在是几点几分-span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px18今~時~分です-现在是几点几分-span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">18.今～時（～分）です。现在是几点（几分）。</span></h1>
+<p>提问通常不问几分，答可以答几分。</p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">①今何時ですか。（今后面不加は。固定搭配。）</span></p>
+<p>②（午前）七時二十分です。（<span style="font-size: 15px;line-height: 25.6px;">午前午后后面不加の）</span></p>
+<p>③ロンドンは今何時ですか。（问哪里几点可在地点后加<span style="font-size: 15px;line-height: 25.6px;">は）</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px19动词ます型span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px19动词ます型span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">19.动词ます型</span></h1>
+<p>①表示一般现在时（惯常的动作、状态）和将来时</p>
+<p><span style="font-size: 15px;line-height: 1.6;">②表示尊敬礼貌，礼貌体（对不熟的人，上司长辈等）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">时态：</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">非过去——<span style="font-size: 15px;line-height: 25.6px;">肯定：</span>ます，否定：</span><span style="font-size: 15px;line-height: 1.6;">ません　　</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">过去——肯定：ました，</span><span style="font-size: 15px;line-height: 25.6px;">否定：</span><span style="font-size: 15px;line-height: 1.6;">ませんでした</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">例：</span></p>
+<p>①私<span style="font-size: 15px;text-decoration: underline;">昨日</span>七時<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>おき<span style="font-size: 15px;color: rgb(61, 167, 66);">ました。</span>我昨天七点起床<span style="font-size: 15px;line-height: 1.6;">。</span></p>
+<p>②森さんは<span style="font-size: 15px;color: rgb(61, 167, 66);text-decoration: underline;">毎日</span>働き<span style="font-size: 15px;color: rgb(61, 167, 66);">ます。</span>森先生每天都工作。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">③</span>私は<span style="font-size: 15px;color: rgb(61, 167, 66);text-decoration: underline;">昨日</span>勉強<span style="font-size: 15px;color: rgb(61, 167, 66);">しませんでした。</span>我昨天没学习。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">④</span><span style="font-size: 15px;text-decoration: underline;">今週の土曜日は</span>休み<span style="font-size: 15px;color: rgb(61, 167, 66);">ません</span>。（强调/对比）这周六不休息。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">⑤</span>疑问：<span style="font-size: 15px;text-decoration: underline;">昨日</span>の夜、寝ました<span style="font-size: 15px;color: rgb(61, 167, 66);">か</span>。昨晚睡了吗。</p>
+<p>（可加可不加时间的标志词，如昨天，下周等 ）</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px20名词时间に动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px20名词时间に动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">20.名词（时间）+に＋动词</span></h1>
+<p>助词<span style="font-size: 15px;line-height: 25.6px;">に接在时间后表示动作发生的时间点（瞬间动作）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">1.具体数字时间后加<span style="font-size: 15px;line-height: 25.6px;">に：</span></span><span style="font-size: 15px;line-height: 1.6;">朝六時に起きます。我早上六点起床。（惯常/将来，看语境）</span></p>
+<p>2.公认的节假日后加<span style="font-size: 15px;line-height: 25.6px;">に</span></p>
+<p>3.星期几可加可不加：<span style="font-size: 15px;line-height: 1.6;">土曜日（に）休みます。星期六休息。</span></p>
+<p>4.ごろ后不加：<span style="font-size: 15px;line-height: 25.6px;">小野さんは毎日十一時ごろ寝ます。小野每天十一点左右睡觉。</span></p>
+<p>5.今日、明日、去年、每日等词不加。</p>
+
+<p>例：</p>
+<p>①森さんは七時<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>朝ご飯を食べます。森七点吃早餐。</p>
+<p>②疑问：何時<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>/<span style="font-size: 15px;color: rgb(61, 167, 66);">いつ</span>出張します<span style="font-size: 15px;color: rgb(61, 167, 66);">か</span>。你几点/什么时候出差？</p>
+<p>回答：九時<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>出張します/九時<span style="font-size: 15px;color: rgb(61, 167, 66);">です</span>。九点。</p>
+<p>（用<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">何時に</span><span style="font-size: 15px;line-height: 25.6px;">问具体时间，用<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">いつ</span><span style="font-size: 15px;line-height: 25.6px;">不</span>问具体几点，可回答星期几，几点，哪个月等）</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px21strong-styleline-height-32px名时间地点から名时间地点まで动词ですstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px21strong-styleline-height-32px名时间地点から名时间地点まで动词ですstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">21.<strong style="line-height: 32px;">名（时间/地点）+から+名（时间/地点）+まで＋动词/です</strong></span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">表示范围，从……到……</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">から：前接时间或地点名词，表示时间或地点的起点</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">まで：<strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">前接时间或地点名词，表示时间或地点的终点</span></strong></span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">两个助词可以单独使用也可搭配使用</span></strong></span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①分开使用：</p>
+<p>授業は八時半<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>始まります/八時半<span style="font-size: 15px;color: rgb(61, 167, 66);">からです</span>。八点半上课</p>
+<p>授業は午後四時<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>終わります/四時<span style="font-size: 15px;color: rgb(61, 167, 66);">までです</span>。下午四点放学</p>
+<p><span style="line-height: 25.6px;font-size: 15px;">友達の家まで、自転車で行きます。我骑车到朋友家（到朋友家是骑车去的）。</span></p>
+<p>②一起使用：</p>
+<p><span style="line-height: 25.6px;font-size: 15px;">学校から家まで歩いていきます。我从学校走回家（从学校到家是走路回去的）。</span></p>
+<p>学校は月曜日<span style="font-size: 15px;color: rgb(61, 167, 66);">から</span>金曜日<span style="font-size: 15px;color: rgb(61, 167, 66);">まで</span>です。周一到周五上学（学校上课时间是周一到周五）。</p>
+<p>休みの日は土曜日と日曜日です。周六和周日休息。</p>
+<p><span style="line-height: 25.6px;font-size: 15px;">リンさんは１６時<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">から</span>１７時<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">まで</span>泳ぎます。林小姐16点到17点游泳。</span></p>
+<p>③疑问：いつから/<span style="font-size: 15px;line-height: 25.6px;">いつ</span>までですか<span style="font-size: 15px;line-height: 1.6;">。什么时候开始/结束？</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">问：銀行は<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">何時まで</span>ですか/<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">何時に</span>終わりますか。银行什么时候下班？</span></p>
+<p>答：三時<span style="font-size: 15px;color: rgb(61, 167, 66);">まで</span>です。  或    三時<span style="font-size: 15px;color: rgb(61, 167, 66);">に終わります</span>。三点。</p>
+<p>（两种回答可以混用，不一定用<span style="font-size: 15px;line-height: 25.6px;">から/<span style="font-size: 15px;line-height: 25.6px;">まで</span>问用<span style="font-size: 15px;line-height: 25.6px;">から/<span style="font-size: 15px;line-height: 25.6px;">まで</span>答。）</span></span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px22名场所へに动词表示移动的动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px22名场所へに动词表示移动的动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">22.名（场所）+へ/に＋动词（表示移动的动词）</span></h1>
+<p>へ前：移动的目的地，意为移动到某一场所。</p>
+<p>例：</p>
+<p>①A:昨日病院<span style="font-size: 15px;color: rgb(61, 167, 66);">へ/に</span>行きましたか。你昨天去医院了吗？</p>
+<p>B:いいえ、行きませんでした。友達は家<span style="font-size: 15px;color: rgb(61, 167, 66);">へ/に</span>来ました。没有，我朋友来家里了。</p>
+<p>A:そうですか。这样啊。</p>
+<p>②疑问：<span style="font-size: 15px;color: rgb(61, 167, 66);">どこへ/に</span>行きますか。你要去哪？</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px23名场所から动词移动span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px23名场所から动词移动span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">23.名（场所）＋から＋动词（移动）</span></h1>
+<p>から前：移动的起点，意为从某处</p>
+<p>例：</p>
+<p>①私の弟はアメリカ<span style="font-size: 15px;color: rgb(61, 167, 66);">から</span>来ました。我弟弟从美国来了。</p>
+<p>②ー林さんはいつ<span style="font-size: 15px;color: rgb(61, 167, 66);">どこから</span>ペキン<span style="font-size: 15px;color: rgb(61, 167, 66);">へ</span>来ましたか。林小姐什么时候从哪来北京的？</p>
+<p>ー一月六日に北海道<span style="font-size: 15px;color: rgb(61, 167, 66);">から</span>来ました。1月6号从北海道来的。</p>
+<p>区别：</p>
+<p>ドイツ<span style="font-size: 15px;text-decoration: underline;">から</span>来ました。人不在德国，从德国来</p>
+<p>ドイツ<span style="font-size: 15px;text-decoration: underline;">へ</span>来ました。人在德国，到了德国</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px24名人と动词和某人一同做某事span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px24名人と动词和某人一同做某事span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">24.名（人）+と+动词，和某人一同做某事</span></h1>
+<p>と前：动作的伴随者，并非动作的主体，动作的主体在<span style="font-size: 15px;line-height: 25.6px;">は前面。</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;"></span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span><br>
+</p>
+<p><span style="line-height: 25.6px;font-size: 15px;">①（私は）彼氏<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">と</span>晩ご飯食べた。和男朋友吃了晚饭。</span></p>
+<p>②ー（）誰<span style="font-size: 15px;color: rgb(61, 167, 66);">と</span>映画館へ来ましたか。你和谁一起来影院的？</p>
+<p>ー<span style="font-size: 15px;color: rgb(61, 167, 66);">一人で</span>きました。我自个儿来的。</p>
+<p>③<span style="font-size: 15px;line-height: 25.6px;">友達<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">と</span>嵐のコンサートへ見に行きました。我和朋友一起去看了岚的演唱会。</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p>区别：</p>
+<p>部屋に誰がいますか。－－私<span style="font-size: 15px;text-decoration: underline;">と</span>アンさんです。两个人为并列</p>
+<p>一人で帰りますか。–幸恵<span style="font-size: 15px;text-decoration: underline;">と</span>。第二者为伴随主体做动作的人</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px25名工具手段方法原材料で动词用做某事span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px25名工具手段方法原材料で动词用做某事span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">25.名（工具，手段，方法，原材料）＋で＋动词，用……做某事</span></h1>
+<p>疑问：<span style="font-size: 15px;line-height: 1.6;">何で（なにで/なんで）</span></p>
+<span style="font-size: 15px;line-height: 1.6;">
+</span>
+<p><span style="font-size: 15px;line-height: 1.6;">例：</span></p>
+<p>①戸田さんは先週飛行機<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>ロシアへ行きました。户田小姐上周坐/乘飞机去<span style="font-size: 15px;line-height: 25.6px;">了</span><span style="font-size: 15px;line-height: 1.6;">俄罗斯。（</span>で<span style="font-size: 15px;line-height: 1.6;">前不出现动词”坐，乘“，通过名词，翻译出了动作）</span><span style="font-size: 15px;line-height: 25.6px;">步行用歩いて</span></p>
+<p>②中国で箸<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>食べます。在中国用筷子吃饭</p>
+<p>③英語<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>手紙を書きます。用英语写信</p>
+<p>④この机は木<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>作られました。这个桌子是用木做的。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px26名を动词spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px26名を动词spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">26.名+を+动词</span></strong></span></h1>
+<p>を前：动作<span style="font-size: 15px;text-decoration: underline;">内容</span>的对象，宾语</p>
+<p>动作施加在对象上，在对象后加助词<span style="font-size: 15px;line-height: 25.6px;">を</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①<span style="font-size: 15px;line-height: 25.6px;">写真<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">を</span>撮ります。拍照片</span></p>
+<p>②<span style="font-size: 15px;line-height: 25.6px;">音楽<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">を</span>聞きます。听音乐</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">③明日、映画を見ます、それから、サッカー<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">を</span>します。（球类用</span><span style="font-size: 15px;line-height: 1.6;">します）踢足球</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">④</span><span style="font-size: 15px;line-height: 25.6px;">何も食べません。什么也不吃</span></p>
+<p>⑤疑问：何を読みますか。漫画です。（直接回答）</p>
+<p>-魚を食べますか。你吃鱼吗？（加上是或否）</p>
+<p>-<span style="font-size: 15px;text-decoration: underline;">はい</span>、食べます。是的，我吃鱼。/<span style="font-size: 15px;text-decoration: underline;">いいえ</span>、食べません。不，我不吃鱼。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px27名场所で动词在哪做什么spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px27名场所で动词在哪做什么spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">27.名（场所）＋で＋动词，在哪做什么</span></strong></span></h1>
+<p>表示整个动作行为发生的地点和场所（不能穿越）</p>
+<p>例：</p>
+<p>①<span style="font-size: 15px;line-height: 1.6;">李さんは居間<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">で</span>新聞を読みます。李先生在客厅读新闻</span></p>
+<p>②コンビニ<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>お弁当を買います。在便利店买便当。</p>
+<p>③疑問：<span style="font-size: 15px;color: rgb(61, 167, 66);">どこで</span>……を……</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px28名か名spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px28名か名spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">28.名+か+名</span></strong></span></h1>
+<p>其前后均接名词，表示在两个名词之间进行选择，<span style="font-size: 15px;line-height: 25.6px;">选择/或者</span></p>
+<p>例：</p>
+<p>①私は毎朝パン<span style="font-size: 15px;color: rgb(61, 167, 66);">か</span>お粥を食べます。我每天早上吃面包或喝粥。</p>
+<p>②私は喫茶店<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>お茶<span style="font-size: 15px;color: rgb(61, 167, 66);">か</span>コーヒーを飲みます。我在咖啡店喝茶或咖啡。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px29~をくださいspanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px29~をくださいspanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">29.~をください</span></strong></span></h1>
+<p>请给我，我要……</p>
+<p>经常翻译为“请”，但不是敬语。带命令语气。</p>
+<p>例：</p>
+<p>①すみません、リンゴと桃<span style="font-size: 15px;color: rgb(61, 167, 66);">をください</span>。不好意思，请给我苹果和桃子。</p>
+<p>②<span style="font-size: 15px;text-decoration: underline;">これをください</span>。请给我这个。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px30aにbを动词a给b做什么可以带双宾语spanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px30aにbを动词a给b做什么可以带双宾语spanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">30.AにBを+动词，A给B做什么（可以带双宾语）</span></strong></span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">に：</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">方向</span></span><span style="font-size: 15px;line-height: 25.6px;">上的</span><span style="font-size: 15px;line-height: 25.6px;">对象</span><span style="font-size: 15px;line-height: 25.6px;">，</span><span style="font-size: 15px;line-height: 25.6px;">宾语</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">を：内容上的对象，宾语</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p>例：</p>
+<p>①さっき<span style="font-size: 15px;text-decoration: underline;">電話</span><span style="font-size: 15px;color: rgb(61, 167, 66);">を</span><span style="font-size: 15px;text-decoration: underline;">掛けました</span>ね。誰<span style="font-size: 15px;color: rgb(61, 167, 66);">に（）</span>かけましたか。</p>
+<p>②お兄さん<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span><span style="font-size: 15px;text-decoration: underline;">お金</span><span style="font-size: 15px;color: rgb(61, 167, 66);">を</span><span style="font-size: 15px;text-decoration: underline;">貸します/借ります</span>。<span style="font-size: 15px;line-height: 25.6px;">我借钱给哥哥</span><span style="font-size: 15px;line-height: 1.6;">/</span><span style="font-size: 15px;line-height: 25.6px;">我向哥哥借钱</span><span style="font-size: 15px;line-height: 1.6;">。</span></p>
+<p>③<span style="font-size: 15px;line-height: 25.6px;">（）メール</span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">を</span><span style="font-size: 15px;line-height: 25.6px;">送ります。（通讯的“送”）</span></p>
+<p>④佐仓<span style="font-size: 15px;line-height: 25.6px;">は野崎君<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">に</span>傘<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">を</span>送り<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">ます</span>。佐仓给野崎君送伞。（不是送礼的“送”）</span></p>
+<p>⑤<span style="font-size: 15px;line-height: 25.6px;">ｘｘ<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">に</span>日本語<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">を</span>習い<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">ます</span>。（技能型的学习；勉強します：知识性的）向……学习日语</span></p>
+<p>⑥<span style="font-size: 15px;line-height: 25.6px;">誰<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">にも</span>教えません/話しません。我谁也不告诉。</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px31aはbにcをあげますa给b-ca把c给bspanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px31aはbにcをあげますa给b-ca把c给bspanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">31.AはBにCをあげます，A给B  C，A把C给B</span></strong></span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">に:动作方向的对象，接受者</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">“给give”的方向：</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">（（（1说话者）2说话者的亲人等）3其他人如朋友同事等）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">以说话人为中心丈量“远近”</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">①内圈的人给外圈的人（1给2，1给3，2给3）</span></p>
+<p>②同圈的人给同圈的人（2给2，3给3）</p>
+<p>例：<br>
+</p>
+<p>①<span style="font-size: 15px;line-height: 1.6;">お父さんはお母さん<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">に</span>チョコレート<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">をあげました</span>。（2给2）</span></p>
+<p>②私はゆいさん<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>お土産<span style="font-size: 15px;color: rgb(61, 167, 66);">をあげました</span>。（1给3）</p>
+<p>③ーA:友達は結婚します。我朋友要结婚了。</p>
+<p>ーB:<span style="font-size: 15px;color: rgb(61, 167, 66);">（）</span>プレゼント<span style="font-size: 15px;color: rgb(61, 167, 66);">をあげますか</span>。何をあげますか。你要送他礼物吗？送什么礼物呢？（3给3）</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px32aはbにcをもらいますa从b得到cb把a给cspanstrongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256px32aはbにcをもらいますa从b得到cb把a给cspanstrongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">32.AはBにCをもらいます，A从B得到C，B把A给C</span></strong></span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">に：动作方向的对象，给与者，从……得到的对象</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">“得get”的方向：</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">（（（1说话者）2说话者的亲人等）3其他人如朋友同事等）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">以说话人为中心丈量“远近”</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">①内圈的人从外圈的人得（1给2，1给3，2给3）</span></p>
+<p>②同圈的人从同圈的人得（2给2，3给3）</p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span><span style="font-size: 15px;line-height: 25.6px;"><br>
+</span></p>
+<p>①私は兄<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>靴<span style="font-size: 15px;color: rgb(61, 167, 66);">をもらいました</span>。我从哥哥那得到了双鞋（1从2得）</p>
+<p>②兄は木村さん<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>スニーカー<span style="font-size: 15px;color: rgb(61, 167, 66);">をもらいました</span>。哥哥从木村先生处得到了双板鞋。（2从3得）</p>
+<p>③木村さんは福山さん<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>シーディー<span style="font-size: 15px;color: rgb(61, 167, 66);">をもらいました</span>。木村先生从福山先生处得到了cd（3从3得）</p>
+<p>④会社<span style="font-size: 15px;text-decoration: underline;color: rgb(61, 167, 66);">から</span>ボーナスをもらいました。（<span style="font-size: 15px;line-height: 25.6px;">AはBにCをもらいま<span style="font-size: 15px;line-height: 25.6px;">す句型中的<span style="font-size: 15px;line-height: 25.6px;">に可以与<span style="font-size: 15px;line-height: 25.6px;">から互换，但当</span></span></span></span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">对象不是一个人而是集体，团体，组织时</span><span style="font-size: 15px;line-height: 25.6px;">则不能互换，</span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">只能用から</span><span style="font-size: 15px;line-height: 25.6px;">不用<span style="font-size: 15px;line-height: 25.6px;">に）</span></span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32px33形1span-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxい形容词span名词strongspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxstrong-styleline-height-32px33形1span-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxい形容词span名词strongspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><strong style="line-height: 32px;">33.形1（<span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;">い形容词）</span>＋名词</strong></span></h1>
+<p><span style="font-size: 15px;line-height: 1.6;">＊多い、すくない</span><span style="font-size: 15px;line-height: 1.6;">修饰名词不能直接加，固定搭配</span>（不能说多い本X，要说<span style="font-size: 15px;line-height: 25.6px;">たくさんの本；</span><span style="font-size: 15px;line-height: 1.6;">少ない人X）</span></p>
+<p>形1词尾必有い，但词尾有い未必是形1</p>
+<p>形1修饰名词，形1和名词间不加の，虽然中文翻译有“的”。<span style="font-size: 15px;line-height: 25.6px;"></span><span style="font-size: 15px;line-height: 25.6px;">おいしい料理√ ，おいしいの料理X</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">用言，变形都在自身变，变完再加です</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p>例：</p>
+<p>①すき焼きは<span style="font-size: 15px;color: rgb(61, 167, 66);">おいしい料理</span>です。日式牛肉火锅是美味的料理。</p>
+<p>②昨日、<span style="font-size: 15px;color: rgb(61, 167, 66);">高い鞄</span>をかいました。昨天买了个很贵的包。</p>
+<p>③図書館で<span style="font-size: 15px;color: rgb(61, 167, 66);">面白い本</span>を読みました。在图书馆看了本很有意思的书。</p>
+<p>④あの<span style="font-size: 15px;color: rgb(61, 167, 66);">古いアルバム</span>を見せていただきますか。能让我看看那本旧相册吗？</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px34形2な形容词形容動詞な名词的span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px34形2な形容词形容動詞な名词的span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">34.形2（な形容词/形容動詞）＋な＋名词，……的……</span></h1>
+<p>形2都有词尾だ</p>
+<p>例：</p>
+<p>①<span style="font-size: 15px;color: rgb(61, 167, 66);">キレイな</span>部屋ですね。挺漂亮的房间嘛。</p>
+<p>②社長はあまり<span style="font-size: 15px;color: rgb(61, 167, 66);">有名な人</span>ではありません。社长不是那么有名的人。</p>
+<p>③<span style="font-size: 15px;color: rgb(61, 167, 66);">にぎやかな通り</span><span style="font-size: 15px;line-height: 25.6px;">です。这是条热闹的大街。</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px35名词は形1ですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px35名词は形1ですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">35.名词+は+形1です</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">谓语：形1，不是です，<span style="font-size: 15px;line-height: 25.6px;">です不是“是”的意思，可省略（礼貌作用）。</span></span></p>
+<p>谓语不是です，<span style="font-size: 15px;text-decoration: underline;">变形不在です上变</span>，按照形容词自身规律变化</p>
+<p>高くありません〇 不能说 高いではありませんｘ</p>
+<p>否定：<span style="font-size: 15px;line-height: 25.6px;">い→くない/<span style="font-size: 15px;line-height: 25.6px;">く</span>ありません</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">过去：い→かった</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">过去否定：い→くなかった/<span style="font-size: 15px;line-height: 25.6px;">く<span style="font-size: 15px;line-height: 25.6px;">ありませんでした</span></span></span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">いい＝よいーよくないーよかったーよくなかった</span></p>
+<p>例：</p>
+<p>①旅行は<span style="font-size: 15px;line-height: 25.6px;">とても</span><span style="font-size: 15px;color: rgb(61, 167, 66);">楽しかった</span>です。这次旅行很快乐。（<span style="font-size: 15px;line-height: 25.6px;">とても/たいへん＋肯定，表示非常，很）</span></p>
+<p>②<span style="font-size: 15px;line-height: 25.6px;">このスープは少し<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">辛い</span>です。汤有点儿辣。</span><span style="font-size: 15px;line-height: 25.6px;">（少し/ちょっと＋肯定，表示有点，稍微）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">③試験はあまり<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">難しくありませんでした</span>。考试不太难。</span><span style="font-size: 15px;line-height: 25.6px;">（あまり＋否定为一整体，表示不太，单独用并不是“不太”）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">④この靴は全然<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">高くないです</span>。这双鞋一点也不贵。</span><span style="font-size: 15px;line-height: 25.6px;">（ぜんぜん＋否定为一整体使用，表示一点也不，完全不，单独用不是“完全不”）</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px36名词は形2名词ですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px36名词は形2名词ですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">36.名词+は+形2/名词です</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">谓语不是です，但形2本身有词尾だ，即礼貌体的です，因此变形在です上变，此です非彼です</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">形2和名词的活用（变法）一致<br>
+</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p>肯定：～です</p>
+<p>否定：～ではありません/じゃありません</p>
+<p>過去：～でした</p>
+<p>過去否定：～ではありませんでした/じゃありませんでした</p>
+<p>例：</p>
+<p>①僕の部屋は<span style="font-size: 15px;color: rgb(61, 167, 66);">キレイです/だ</span>。<span style="font-size: 15px;text-decoration: underline;">でも</span>、狭いです。我的房子很漂亮，但是很小。</p>
+<p>②<span style="font-size: 15px;line-height: 25.6px;">僕の部屋は<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">キレイじゃないです</span></span>。<span style="font-size: 15px;text-decoration: underline;">そして</span>、狭いです。我的房子不漂亮，而且很小。</p>
+<p>③君のこと、<span style="font-size: 15px;color: rgb(61, 167, 66);">好きでした</span>。我喜欢你。</p>
+<p>④このあたりの交通は<span style="font-size: 15px;color: rgb(61, 167, 66);">便利ではありませんでした</span>。这一带以前交通不便利。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px37どんなですか-什怎么样的span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px37どんなですか-什怎么样的span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">37.どんな…ですか。什/怎么样的……？</span></h1>
+<p>どんな后必须加名词一起使用</p>
+<p>例：</p>
+<p>彼は<span style="font-size: 15px;color: rgb(61, 167, 66);">どんな人</span>ですか。優しくて、まじめなひとです。他是个怎样的人？是个温柔又认真的人。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">何の和どんな区分：</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">なんの问内容和材料，</span><span style="font-size: 15px;line-height: 1.6;">どんな问性质</span></p>
+<p>①これは何の本ですか。<span style="font-size: 15px;line-height: 1.6;">日本語の本です。日语书。（内容）</span></p>
+<p>何の料理ですか。<span style="font-size: 15px;line-height: 25.6px;">魚の料理です。鱼（做的）料理。</span><span style="font-size: 15px;line-height: 1.6;">（材料）</span></p>
+<p>②これはどんな本ですか。<span style="font-size: 15px;line-height: 25.6px;">面白い本です。有趣的书。（性质）</span></p>
+<p>これはどんな料理ですか。<span style="font-size: 15px;line-height: 25.6px;">ちょっと甘い料理です。有点甜的料理。（性质）</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p>どんな和どうですか区分：</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">どんな问，回答要加上主题而どうですか不用（因为问题的侧重点不一样）</span><br>
+</p>
+<p>①この服はどうですか。<span style="font-size: 15px;color: rgb(61, 167, 66);">キレイです</span>。似合いますよ。这件衣服怎么样？很漂亮，很适合你哦。</p>
+<p>②どんな服ですか。<span style="font-size: 15px;color: rgb(61, 167, 66);">キレイな服です</span>。这是什么样的一件衣服？很漂亮的衣服。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">どうですか</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">①问对方的心情、情况；②对某物的状态的意见或感想，</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">中文中问“怎么样”的日语</span><span style="font-size: 15px;line-height: 25.6px;">一般</span><span style="font-size: 15px;line-height: 25.6px;">都可以用<span style="font-size: 15px;line-height: 25.6px;">どうですか</span>，</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">③劝诱对方进行某动作</span></p>
+<p>お茶どうですか/いかがですか。喝杯茶吧/要喝茶吗。</p>
+<p>どうですか的过去式：どうでしたか</p>
+<p>どうですか的礼貌体：いかがですか，いかがでしたか</p>
+
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px38aはb名が形容词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px38aはb名が形容词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">38.A+は＋B(名)＋が＋形容词</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">は前：情感的主体</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">が前：情感的对象助词用が</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①一般的にいうと、女の子は蛇<span style="font-size: 15px;color: rgb(61, 167, 66);">が怖い/苦手/嫌い</span>ですけど、<span style="font-size: 15px;line-height: 25.6px;">中島さんは蛇<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">が好きといった。</span>一般来说女生都害怕蛇，但中岛小姐却说她喜欢蛇。</span></p>
+<p>②<span style="font-size: 15px;line-height: 1.6;">果物の中で、どれが好きですか。水果中你喜欢哪个呢？</span></p>
+<p>③猫と犬、どっちが好きですか。猫和狗之中你喜欢哪个？</p>
+<p>犬です。犬派ですから。我喜欢狗，因为我是狗派的。</p>
+<p>④<span style="font-size: 15px;line-height: 25.6px;">周さんは歌</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">が上手/下手</span><span style="font-size: 15px;line-height: 25.6px;">です。周先生唱歌很拿手/捉急。</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px39aはb名が自动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px39aはb名が自动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">39.A+は＋B（名）+が＋自动词</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">自动词（非意志性动词）动作内容的对象助词用が</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①<span style="font-size: 15px;line-height: 25.6px;">A:ピアノが上手ですね。你钢琴真好。</span></p>
+<p>B:あなたは<span style="font-size: 15px;color: rgb(61, 167, 66);">できます</span>か。你会弹吗？</p>
+<p>A:できますけど、たまに弾くだけ。会是会，不过只是偶尔弹弹。</p>
+<p>②私は水泳<span style="font-size: 15px;color: rgb(61, 167, 66);">ができません</span>。運転もできません。我不会游泳，也不会开车。</p>
+<p>③<span style="font-size: 15px;line-height: 25.6px;">時間</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">が</span><span style="font-size: 15px;line-height: 25.6px;">あまり</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">ありません</span><span style="font-size: 15px;line-height: 25.6px;">。时间快没了/不够了。（这里的あまり不是表示程度，表示“量”）</span></p>
+<p>④その外国人は日本語ができますけど、私は彼の日本語<span style="font-size: 15px;color: rgb(61, 167, 66);">がわかりません</span>。<span style="font-size: 15px;line-height: 25.6px;">虽然</span><span style="font-size: 15px;line-height: 1.6;">那个外国人会说日语，但我听不懂他说的日语。</span></p>
+<p>一些频率副词：</p>
+<p>いつも总是＞よく经常＞ときどき时常，有时＞たまに偶尔＞あまり＞ぜんぜん</p>
+<p>彼は<span style="font-size: 15px;color: rgb(61, 167, 66);">いつも</span>七時に家へ帰ります。</p>
+<p>私は<span style="font-size: 15px;color: rgb(61, 167, 66);">よく</span>デパートへ行きます。</p>
+<p>私は<span style="font-size: 15px;color: rgb(61, 167, 66);">時々</span>サッカーをします。</p>
+<p><span style="font-size: 15px;color: rgb(61, 167, 66);">たまに</span>友達に手紙を書きます。</p>
+<p><span style="font-size: 15px;color: rgb(0, 128, 255);">40.名＋や＋名，……呀……，……啦…</span>…</p>
+<p>列举个别/部分典型的例子，<span style="font-size: 15px;line-height: 25.6px;">常与など（等等）搭配使用</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">例举几个都可以，最后一个后常加<span style="font-size: 15px;line-height: 25.6px;">など</span></span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">不一定要例举超过两个，但</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 1.6;">只列举1个必须<span style="font-size: 15px;line-height: 25.6px;">など“断后”（而不是や）</span></span></span><span style="font-size: 15px;line-height: 25.6px;">以体现“部分列举”，否则不是部分例举。</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①コーラ<span style="font-size: 15px;color: rgb(61, 167, 66);">や</span>ワインを買いました。买了可乐啊红酒什么的。</p>
+<p>②机の上に本<span style="font-size: 15px;color: rgb(61, 167, 66);">や</span>辞書<span style="font-size: 15px;color: rgb(61, 167, 66);">や</span>メガネ<span style="font-size: 15px;color: rgb(61, 167, 66);line-height: 25.6px;">など</span>があります。书桌上有书呀词典呀眼镜之类的。</p>
+<p>③新聞<span style="font-size: 15px;color: rgb(61, 167, 66);">など</span>を読みます。看看新闻什么的。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px41~からですからだから原因-理由span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px41~からですからだから原因-理由span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">41.~から/ですから（だから），原因、理由</span></h1>
+<p>区分：<span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">から</span></span><span style="font-size: 15px;line-height: 25.6px;">接在</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">原因</span></span><span style="font-size: 15px;line-height: 25.6px;">的句子末尾，</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">だから</span></span><span style="font-size: 15px;line-height: 25.6px;">接在</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">结果</span></span><span style="font-size: 15px;line-height: 25.6px;">的句子开头，前面一句要结句再说<span style="font-size: 15px;line-height: 25.6px;">だから。</span></span></p>
+<p>例：</p>
+<p>①嵐が好き<span style="font-size: 15px;text-decoration: underline;">だ/です</span><span style="font-size: 15px;color: rgb(61, 167, 66);">から</span>、毎日嵐の曲を聞きます。</p>
+<p>=<span style="font-size: 15px;line-height: 1.6;">嵐がすきです。</span><span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">だから/ですから、</span><span style="font-size: 15px;line-height: 1.6;">毎日</span><span style="font-size: 15px;line-height: 25.6px;">嵐の曲を聞きます。因为我喜欢岚，所以我每天都听他们的歌。（から和だから不同时使用）</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">②走るのが好きです。体にいいです<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">から</span>。（原因结果的顺序可以先说后说）</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">对原因的提问：</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">どうして～か/</span><span style="font-size: 15px;line-height: 25.6px;">どうしてですか。</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">A:<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">どうして</span>万葉集が苦手です<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">か</span>。/万葉集が苦手ですね。<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">どうしてですか。</span></span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">B:訳が難しいし、なんていってるかわかんない<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">から</span>。（、苦手です。）</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px42a-は-b-よりc形-です比怎样span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px42a-は-b-よりc形-です比怎样span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">42.A は B より+C（形 ）です，……比……怎样</span></h1>
+<p>程度相差大的情况下，形容词前加ずっと（……得多）</p>
+<p>形容词所描述的是は前的“主角”，先把基本含义句子写出来，再把比的标准插进去，比谁怎么样就在谁后面加より</p>
+<p>烤鸡比炸鸡好吃：先写烤鸡好吃，再把比炸鸡插进去</p>
+<p>例：</p>
+<p>①姚さん<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>劉さん<span style="font-size: 15px;color: rgb(61, 167, 66);">より</span>背が<span style="font-size: 15px;color: rgb(61, 167, 66);">高いです</span>。姚先生比刘先生高。</p>
+<p>②一月<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>七月<span style="font-size: 15px;color: rgb(61, 167, 66);">より寒いです</span>。一月比七月冷。</p>
+<p>③五月<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>六月<span style="font-size: 15px;color: rgb(61, 167, 66);">より</span>雨が<span style="font-size: 15px;color: rgb(61, 167, 66);">少ないです</span>。五月比六月雨少。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px43a-は-b-ほど-形1くないです形2ではありませんa不如b怎样span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px43a-は-b-ほど-形1くないです形2ではありませんa不如b怎样span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">43.A は B ほど+ 形1くないです/形2ではありません，A不如B怎样</span></h1>
+<p>注意此句型<span style="font-size: 15px;line-height: 25.6px;">ほど与</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">形容词否定式</span></span><span style="font-size: 15px;line-height: 25.6px;">搭配使用</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">比谁怎样就在谁后加</span><span style="font-size: 15px;line-height: 25.6px;">ほど</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①ペキン<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>上海<span style="font-size: 15px;color: rgb(61, 167, 66);">ほど</span>にぎやか<span style="font-size: 15px;color: rgb(61, 167, 66);">ではありません。</span>北京没有上海那么繁华。</p>
+<p>②英語の成績<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>先月<span style="font-size: 15px;color: rgb(61, 167, 66);">ほどよくないです</span>。でも数学の成績<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>先月<span style="font-size: 15px;color: rgb(61, 167, 66);">よりずっといいよ。</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px44a-と-b-とどちらがか-a和b哪个span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px44a-と-b-とどちらがか-a和b哪个span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">44.A と B と+どちらが……か。A和B哪个……</span></h1>
+<p>どちら针对<span style="font-size: 15px;text-decoration: underline;">两者</span>进行询问，2选1，进行选择的每一个名词后都加と，どちら后用助词が。只要是问2选1，疑问词都用どちら</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">どちら的口语形式：</span>どっち</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">不一定有人问……と……とどちら才能回答……より……ほど，可以主动进行陈述，表明意见等。</span><br>
+</p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p>例：</p>
+<p>①<span style="font-size: 15px;line-height: 25.6px;">私<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">ほど</span>きれいな女はほかに<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">いるはずがない</span>のよ。怎么可能有比我还美丽的女人呢！</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">②ー日本語<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">と</span>英語<span style="font-size: 15px;line-height: 1.6;color: rgb(61, 167, 66);">とどちらが難しいですか</span>。日语和英语哪个更难？</span></p>
+<p>ー（）日本語<span style="font-size: 15px;color: rgb(61, 167, 66);">のほうが</span>難しいです。/<span style="font-size: 15px;color: rgb(61, 167, 66);">どちらも</span>難しいです/どちらも難しくないです。（）日语更难。/两个都难/两个都不难。</p>
+
+<p>答法：</p>
+<p>（Aより）B<span style="font-size: 15px;text-decoration: underline;">のほうが</span>……（形）です，（和……比）……更……</p>
+<p>或<span style="font-size: 15px;line-height: 25.6px;">どちらも……<span style="font-size: 15px;line-height: 25.6px;">です。</span></span><span style="font-size: 15px;line-height: 25.6px;">两个都……。</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">ほう：比较的结果</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">此句型中的が不能换成は</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">区分：</span></p>
+<p>毛さん<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>背が高いです。单纯的陈述事实</p>
+<p>毛さん<span style="font-size: 15px;color: rgb(61, 167, 66);">のほうが</span>高いです。暗含比较的标准，<span style="font-size: 15px;line-height: 25.6px;">のほうが不能少</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px45aの中で-bが-いちばんc形です在范围时间场所中最span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px45aの中で-bが-いちばんc形です在范围时间场所中最span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">45.（Aの中）で 、Bが +いちばん+C（形）です，在……（范围/时间/场所）中，……最……</span></h1>
+<p>表示三者以上进行比较、选择。</p>
+<p>疑问可用<span style="font-size: 15px;line-height: 1.6;">なに、どこ、どれ、だれ、いつ</span></p>
+<p>疑问：①（<span style="font-size: 15px;line-height: 25.6px;">（Aの中）で 、）いちばん+B（形）</span>な<span style="font-size: 15px;line-height: 25.6px;">+C（形）</span><span style="font-size: 15px;line-height: 1.6;">は+<span style="font-size: 15px;line-height: 25.6px;">なに/どこ/どれ/だれ/いつ</span>ですか。</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;"><span style="font-size: 15px;line-height: 25.6px;">②（（Aの中）で 、）</span><span style="font-size: 15px;line-height: 1.6;"><span style="font-size: 15px;line-height: 25.6px;">なに/どれ/だれ/いつ<span style="font-size: 15px;line-height: 25.6px;">が</span> +<span style="font-size: 15px;line-height: 25.6px;">いちばん+B （形）</span></span>ですか。</span></span></p>
+<span style="line-height: 1.6;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 1.6;">例：</span></p>
+<p>①<span style="font-size: 15px;text-decoration: underline;">中国</span><span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>、<span style="font-size: 15px;color: rgb(61, 167, 66);">どの</span>町<span style="font-size: 15px;color: rgb(61, 167, 66);">が</span>一番大きいですか。在中国哪个城市最大？（场所）</p>
+<p>②ーアイドルグループ<span style="font-size: 15px;color: rgb(61, 167, 66);">の中で</span>、<span style="font-size: 15px;color: rgb(61, 167, 66);">一番好きな</span>グループ<span style="font-size: 15px;color: rgb(61, 167, 66);">はどれですか</span>。偶像组合中你最喜欢哪个？（范围）</p>
+<p>ー嵐です。</p>
+<p>＊区分：</p>
+<p>用助词が：形容词放在后面结句，作谓语</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">アイドルグループの中で、嵐</span><span style="font-size: 15px;color: rgb(61, 167, 66);line-height: 25.6px;text-decoration: underline;">が</span><span style="font-size: 15px;line-height: 25.6px;">一番好きです。</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">用助词は：形容词放在前面修饰名词，整体作主语</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">アイドルグループの中で、一番好きなグループ</span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">は</span></span><span style="font-size: 15px;line-height: 25.6px;">嵐です。</span></p>
+<span style="line-height: 25.6px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px46名词数量时间动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px46名词数量时间动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">46.名词（数量/时间）+动词</span></h1>
+<p>数量词/时间名词接在<span style="font-size: 15px;text-decoration: underline;">动词前</span>，助词后，</p>
+<p>例：</p>
+<p>①<span style="font-size: 15px;line-height: 25.6px;">ガレージに車が<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">二台</span></span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">あります</span><span style="font-size: 15px;line-height: 25.6px;">。车库里有两辆汽车。</span></p>
+<p>②<span style="font-size: 15px;line-height: 25.6px;">会場にスタッフが<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">四人</span></span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">います</span><span style="font-size: 15px;line-height: 25.6px;">。会场里有四位工作人员。</span></p>
+<p>③<span style="font-size: 15px;line-height: 25.6px;">はがきを三枚</span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;color: rgb(61, 167, 66);">と</span><span style="font-size: 15px;line-height: 25.6px;">切手を五枚ください。ーーはい、<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">五枚</span></span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">で</span><span style="font-size: 15px;line-height: 25.6px;">２５０円です。请给我三张明信片和五张邮票。好的，五张一共250日元。</span></p>
+<p>④ここからアメリカまで<span style="font-size: 15px;color: rgb(61, 167, 66);">二日（間）/二時間/二週</span><span style="font-size: 15px;color: rgb(61, 167, 66);text-decoration: underline;">間</span><span style="font-size: 15px;color: rgb(61, 167, 66);">/1年（間）</span>かかりそうです。从这儿到美国要花两天/两小时/两星期/１年。<br>
+</p>
+<p>⑤春さんは試験のため、何<span style="font-size: 15px;color: rgb(61, 167, 66);">か月</span>もドラマをみませんでした。春因为准备考试已经好几个月没看剧了。</p>
+<p>疑问：どれぐらい/どのぐらい或：何+数量词</p>
+<p>あなたはドラマを<span style="font-size: 15px;color: rgb(61, 167, 66);">どれぐらい見ますか/何時間見ますか。</span>—毎週２０時間です。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px47名时间段に名次数动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px47名时间段に名次数动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">47.名（时间段）+に+名（次数）+动词</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">表示在一定的时间段内进行某项活动的次数或频率</span></p>
+<span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">例：</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">①この花は二年<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">に</span>一度<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">咲きます</span>。这种花两年开一次。</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">②私は</span><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;color: rgb(61, 167, 66);">週に/毎週</span><span style="font-size: 15px;line-height: 25.6px;">２０時間ゲーム<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">します</span>。</span><span style="font-size: 15px;line-height: 25.6px;">（以每开头的，<span style="font-size: 15px;line-height: 25.6px;">に省略：每年，每月，每<span style="font-size: 15px;line-height: 25.6px;">週，每日等；一週間に、</span></span></span><span style="font-size: 15px;line-height: 25.6px;">か月に、</span><span style="font-size: 15px;line-height: 25.6px;">一日<span style="font-size: 15px;line-height: 25.6px;">に等可省略地说成</span></span><span style="font-size: 15px;line-height: 25.6px;">週に、月に、</span><span style="font-size: 15px;line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">日<span style="font-size: 15px;line-height: 25.6px;">に</span></span>）</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px48名词地点へ动词目的にいきます来ます帰りますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px48名词地点へ动词目的にいきます来ます帰りますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">48.名词（地点）＋へ＋动词（目的）＋に＋いきます/来ます/帰ります</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">移动到某地的目的</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">目的放助词<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">に前，为动词或具有动词意义的名词</span></span></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">例：</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">①何しに来た。你来干什么。</span></p>
+<p><span style="line-height: 25.6px;font-size: 15px;">②銀行へ金を下ろしに行きます。去银行取钱。</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">③一か月に二回ぐらい図書館へ</span><span style="font-size: 15px;color: rgb(61, 167, 66);"><span style="font-size: 15px;line-height: 25.6px;text-decoration: underline;">勉強/勉強し</span></span><span style="font-size: 15px;line-height: 25.6px;">にいきます。我一个月大概两次去图书馆学习。（无宾语时可动名词互换，有宾语时只能用动词）</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px49动词分类span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px49动词分类span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">49.动词分类</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">①1类动词/五段动词（动1）：</span>绝大部分い段动词</p>
+<p><span style="line-height: 25.6px;font-size: 15px;">②2类动词（动2）：ます前假名是え段的动词及部分ます前是<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">い段的动词</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">（如：借ります、見ます、できます、起きます、浴びます、降ります、います、過ぎます、着ます等）</span></span></p>
+<p><span style="white-space: pre-wrap;line-height: 25.6px;font-size: 15px;">③3类动词（动3）：来ます、します、某些可当名词又有动词含义的2个汉字+します（如買物します）、外来语+します（如コピーします）</span></p>
+<span style="white-space: pre-wrap;line-height: 25.6px;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px50て形の作り方span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px50て形の作り方span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">50.て形の作り方</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">一類動詞：ます前の仮名は</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">き/ぎーーい＋て/で</span>（特殊：行きます―ー行って）</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">い、ち、りーーっ＋て</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">に、び、みーーん＋で</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">しーー＋て</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">二類動詞：去ます＋て<br>
+</span></p>
+<p>三類動詞：去ます＋て</p>
+<p>例：</p>
+<p>書きます―書いて；<span style="font-size: 15px;line-height: 1.6;">泳ぎますー泳いで；</span></p>
+<p>洗いますー洗って；<span style="font-size: 15px;line-height: 1.6;">待ちますー待って；帰ります―帰って；</span></p>
+<p>死にますー死んで；<span style="font-size: 15px;line-height: 1.6;">選びますー選んで；読みますー読んで；</span></p>
+<p>消しますー消して；</p>
+<p>見せますー見せて；<span style="font-size: 15px;line-height: 1.6;">起きますー起きて；</span></p>
+<p>しますーして；<span style="font-size: 15px;line-height: 1.6;">来ますーきて；買物しますー買物して；コピーしますーコピーして</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px51动词て形动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px51动词て形动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">51.动词て形+动词</span></h1>
+<p>表示动作相继发生（只要て形都要符合先后顺序）</p>
+<p>两个或以上动作的停顿，强调动作的先后顺序，时态体现在句尾最后一个动词上</p>
+<p>例：</p>
+<p>①昨日、家へ帰って、電気をつけて、手を洗って、それから電話を<span style="font-size: 15px;color: rgb(61, 167, 66);">待ちました。</span></p>
+<p>②図書館へ行っ<span style="font-size: 15px;color: rgb(61, 167, 66);">て</span>本を借り<span style="font-size: 15px;color: rgb(61, 167, 66);">て</span>、寮へ戻ります。我去图书馆借书然后回宿舍。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px52动词てから动词span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px52动词てから动词span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">52.动词てから+动词</span></h1>
+<p>2个动作的停顿，强调动作的前后联系紧密</p>
+<p>①前项动作进行后马上就发生后项动作，“……了，就……”；</p>
+<p>②后项动作发生之前前项动作是必要的，“……了，再……”；</p>
+<p>③自从……。</p>
+<p>（除表示这三种含义外，其他表示2个相继动作时てから、て可互换）</p>
+
+<p>例：</p>
+<p>①家へ帰っ<span style="font-size: 15px;color: rgb(61, 167, 66);">てから</span>、電話をします。回到家<span style="font-size: 15px;text-decoration: underline;">就</span>打电话。</p>
+<p>②手を洗っ<span style="font-size: 15px;color: rgb(61, 167, 66);">てから</span>、ご飯を食べます。洗完手<span style="font-size: 15px;text-decoration: underline;">再</span>吃饭。</p>
+<p>③日本へ来<span style="font-size: 15px;color: rgb(61, 167, 66);">てから</span>、日本語の勉強を始めた。<span style="font-size: 15px;text-decoration: underline;">自从</span>来了日本就开始学日语了。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px53动词て形てくださいspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px53动词て形てくださいspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">53.动词て形+てください</span></h1>
+<p>接在动词て形后，要求或命令别人做某事</p>
+<p>并不是礼貌的请求，用于平级或上对下（对上级可用てくださいませんか）</p>
+<p>てください可省略为て形（如待って）</p>
+
+<p>例：</p>
+<p>①この荷物を航空便で送っ<span style="font-size: 15px;color: rgb(61, 167, 66);">てください。</span></p>
+<p>②ここでタバコを吸っ<span style="font-size: 15px;color: rgb(61, 167, 66);">てください。</span></p>
+<p>③部屋を掃除し<span style="font-size: 15px;color: rgb(61, 167, 66);">てください。</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px54名场所を动离开经过span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px54名场所を动离开经过span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">54.名（场所）+を＋动（离开/经过）</span></h1>
+<p>①<span style="font-size: 15px;text-decoration: underline;">移动经过</span>/离开的场所用を表示②动作起点，与归着点相对</p>
+<p>常用的动词有：通ります、渡ります、過ぎます、出ます、卒業します、飛びます、曲がります、散歩します、出かけます、降ります等</p>
+<p>体育活动所进行的场所用で（如プールで泳ぎます）</p>
+<p>例：</p>
+<p>①空<span style="font-size: 15px;color: rgb(61, 167, 66);">を</span>飛びます。在空中飞。</p>
+<p>②バス<span style="font-size: 15px;color: rgb(61, 167, 66);">を</span>降りて、橋<span style="font-size: 15px;color: rgb(61, 167, 66);">を</span>渡って、公園まで歩きます。下了车，过了桥，然后到公园散步。</p>
+<p>③出かけて、図書館の前の角<span style="font-size: 15px;color: rgb(61, 167, 66);">を</span>右に曲がって、まっすぐ行きます。出门后在图书馆前的拐角右拐然后径直走。</p>
+<p>④公園<span style="font-size: 15px;color: rgb(61, 167, 66);">を</span>散歩します。在公园散步。</p>
+
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px55名词附着点に动词"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px55名词附着点に动词"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">55.名词（附着点）+に+动词</span></h1>
+
+<p>に接在名词后表示动作的落点</p>
+<p>接自动：动作主体穿越几个空间后的落点</p>
+<p>接他动：动作内容最后的落点</p>
+<p>常用附着点に的动词：入ります、乗ります<br>
+</p>
+
+<p>例：</p>
+<p>①庭<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>犬の家を作っています。（狗窝落在院子里）</p>
+<p>②庭で犬の家を作っています。（在院子这个空间里做的动作，狗窝未必落在院子）</p>
+<p>③ここ<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>名前を書いてください。请在这里写名字。</p>
+<p>④椅子<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>座ります。坐在椅子上。</p>
+<p>⑤学校の前<span style="font-size: 15px;color: rgb(61, 167, 66);">に</span>集まります。在校门前集合。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px56动词ていますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px56动词ていますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">56.动词+ています</span></h1>
+<p>①持续性动词，表示动作<span style="font-size: 15px;text-decoration: underline;">正在进行</span></p>
+<p>②瞬间动作，表示动作已结束，而动作的<span style="font-size: 15px;text-decoration: underline;">状态一直持续</span>（即结束后的存留/持续的结果状态）<br>
+</p>
+<p>常用ています表示状态的动词：知ります、持ちます、結婚します、住みます、死にます<br>
+</p>
+
+<p>例：</p>
+<p>正在进行：</p>
+<p>①<span style="font-size: 15px;line-height: 1.6;">ー今、何をしていますか。你在干嘛？</span></p>
+<p>ー勉強し<span style="font-size: 15px;color: rgb(61, 167, 66);">ています</span>。我正在学习。</p>
+<p>ー本当。真的？</p>
+<p>ーええ。テレビを見<span style="font-size: 15px;color: rgb(61, 167, 66);">ていません</span>よ。真的，我没有在看电视。</p>
+<p>②男の人と女の人が話し<span style="font-size: 15px;color: rgb(61, 167, 66);">ています。</span>一个男人和女人正在对话。</p>
+<p>③さっきはお風呂に入っ<span style="font-size: 15px;color: rgb(61, 167, 66);">ていました。</span>刚才在泡澡。</p>
+<p>状态持续：</p>
+<p><span style="font-size: 15px;line-height: 25.6px;">④車を持っ</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">ていますか</span><span style="font-size: 15px;line-height: 25.6px;">。はい、持っ</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">ています</span><span style="font-size: 15px;line-height: 25.6px;">。/いいえ、</span><span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">持っていません</span><span style="font-size: 15px;line-height: 25.6px;">。</span><br>
+</p>
+<p><span style="line-height: 1.6;font-size: 15px;">⑤ー五月さんの電話番号を知っていますか。</span></p>
+<p>ーはい、知っています。/いいえ、<span style="font-size: 15px;color: rgb(61, 167, 66);"><span style="font-size: 15px;text-decoration: underline;">知りません。（特殊）</span></span></p>
+<p>⑥まだ起きていますか。はい、<span style="font-size: 15px;color: rgb(61, 167, 66);">まだ起きています</span>。还醒着吗？嗯，还醒着。（还没有做相反动作）</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px57动词てもいいですかspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px57动词てもいいですかspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">57.动词+てもいいです（か）</span></h1>
+<p>表示允许，许可进行某项动作，“可以……”，“……也没关系”</p>
+<p>固定主语是“我”，“我可以……吗”，不能用于目上</p>
+<p>例：</p>
+<p>テレビをつけ<span style="font-size: 15px;color: rgb(61, 167, 66);">てもいいですか。</span>我可以打开电视机吗？</p>
+<p>肯定回答：ええ、どうぞ；構いません；大丈夫ですよ；ええ、いいです</p>
+<p>否定回答：いいえ、それはちょっと…；いいえ、いけません；だめです</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px58动词てはいけませんだめですか"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px58动词てはいけませんだめですか"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">58.动词+てはいけません/だめです（か）</span></h1>
+
+<p>表示禁止或不允许别人做某事，“不能……”，“不许……”，不能用于目上</p>
+<p>疑问句时表示请求对方许可</p>
+<p>例：</p>
+<p>病院で携帯を使ってはいけませんか。（我）不可以在医院用手机吗？</p>
+<p>ーはい、（使っては）いけません。是的，不可以</p>
+<p>ーいええ、（使っても）いいです。不，可以的。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px60形1て形1形2名で形2名span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px60形1て形1形2名で形2名span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">60.形1+て+形1；形2/名+で形2/名；</span></h1>
+<p>表示内容的并列或句子的中顿</p>
+<p>并列没有数量上的限制</p>
+<p>形1て形变法：い变く＋て</p>
+
+<p>例：</p>
+<p>①熊は<span style="font-size: 15px;color: rgb(61, 167, 66);">黒くて大きくて硬くて</span>光ってて<span style="font-size: 15px;color: rgb(61, 167, 66);">臭くて</span>奇妙な声をあげる生物。熊是黑黑的又大又硬会发光的臭臭的发出奇妙声音的生物。</p>
+<p>②駆さんは親切<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>優しいです。/駆さんは優し<span style="font-size: 15px;color: rgb(61, 167, 66);">くて</span>親切です。驱又亲切又温柔。</p>
+<p>③この機械は日中電気の製品<span style="font-size: 15px;color: rgb(61, 167, 66);">で</span>中国製です。这个机器是日中电器制造的中国制品。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px61小句が小句span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px61小句が小句span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">61.小句が小句</span></h1>
+<p>表示转折的意义，“……不过……”，“……但是……“</p>
+<p>与でも的区别：が接在前半句后与后半句整体是一句话；でも接在前一句结句后后一句话前。</p>
+
+<p>例：</p>
+<p>①三か月パソコンを勉強しました<span style="font-size: 15px;color: rgb(61, 167, 66);">が</span>、まだあまりできません。三月份的时候学了电脑，但是还不是很会。</p>
+<p>②母は優しいです<span style="font-size: 15px;color: rgb(61, 167, 66);">が</span>、父は厳しいです。母亲很温柔，但父亲很严格。</p>
+
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px62名词がほしいです想要span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px62名词がほしいです想要span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">62.名词+がほしいです，想要……</span></h1>
+<p>名词为想要的对象，助词要用<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">が</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">变形按照形1来变化</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">通常不表达第三者愿望</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">不适用于邀请，劝诱</span></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">例：</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">①私は新しい洋服<span style="white-space: pre-wrap;font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">がほしいです/ほしくないです。</span>我（不）想要一件新衣服</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">②（あなたは）欲しいプレゼントがありますか。你想要什么礼物？</span></p>
+<p><span style="font-size: 15px;text-decoration: underline;">彼女</span>はプレゼントが欲しい。X</p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">③お茶が欲しいですか。</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;text-decoration: underline;">你</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">要喝茶吗？ X</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">お茶が<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">どうですか/いかがですか/いいですか。</span>要喝茶吗？</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">ーはい、お願いします/いただきます/ありがとうございます。</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">ーいいえ、結構です。</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">④ありがとう、ずっとこれが欲し<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">かった</span>です。已实现的愿望用过去时</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">ｘｘが欲し</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;color: rgb(61, 167, 66);">かった</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">です。不能实现的愿望也用过去时</span></p>
+<span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px63名を动词ます形たいです愿望想做span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px63名を动词ます形たいです愿望想做span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">63.（名を）动词ます形＋たいです，愿望，想做……</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;">变形按照形1来变化</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">通常不表达第三者愿望</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">不适用于邀请，劝诱</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">此句型中</span><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;">动作内容</span></span><span style="font-size: 15px;line-height: 25.6px;">的を可与が互换</span></p>
+<span style="font-size: 15px;line-height: 25.6px;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;">例：</span></p>
+<p>①ぜひ日本へ<span style="font-size: 15px;color: rgb(61, 167, 66);">行きたい</span>です。<br>
+</p>
+<p>②暖かいスープ<span style="font-size: 15px;color: rgb(61, 167, 66);">が/を</span>飲みたいです。</p>
+<p>③何<span style="font-size: 15px;color: rgb(61, 167, 66);">も</span>したくありませんでした。全面否定</p>
+<p>何<span style="font-size: 15px;color: rgb(61, 167, 66);">でも</span>したいです。（疑问词+でも全面肯定）</p>
+<p>誰<span style="font-size: 15px;color: rgb(61, 167, 66);">にも</span>会いたくないです。谁也不想见。</p>
+<p>どこ<span style="font-size: 15px;color: rgb(61, 167, 66);">へも</span>いきたくないです。哪也不想去。</p>
+<p>④<span style="font-size: 15px;text-decoration: underline;">マリさん</span>は結婚したいです。ｘ</p>
+<p>⑤家に来たいですか。ｘ</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px64动词ます形ませんかましょう提议建议邀请span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px64动词ます形ませんかましょう提议建议邀请span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">64.动词ます形＋ませんか/ましょう，提议，建议，邀请</span></h1>
+<p>ませんか礼貌程度比ましょう高些。<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">ませんか不确定对方想法，较在乎对方的回答；ましょう大概了解对方意愿，进行邀请提议</span></p>
+<span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">
+</span>
+<p>例：</p>
+<p>①一緒にアニメを<span style="font-size: 15px;color: rgb(61, 167, 66);">見ませんか</span>。要一起看动画吗？</p>
+<p>②ぜひ部長に聞き<span style="font-size: 15px;color: rgb(61, 167, 66);">ましょう</span>。一定要去问问部长。</p>
+<p>③明日、家へ遊びに来ませんか。<br>
+</p>
+<p>ーはい/ええ、いいですね。<span style="font-size: 15px;text-decoration: underline;">ｘｘましょう</span>。（进行肯定，同意）</p>
+<p>ーいいえ、ｘｘはちょっと…/そうですね…</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px65~~なりますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px65~~なりますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">65.～～なります</span></h1>
+<p>表示状态，性质发生变化</p>
+<p>接续：形1：いーく＋なります；形2/名：＋になります</p>
+<p>例：</p>
+<p>①天気は暖か<span style="font-size: 15px;color: rgb(61, 167, 66);">くなります</span><span style="font-size: 15px;line-height: 1.6;">。天气要变暖了。</span></p>
+<p>②町は/が賑やか<span style="font-size: 15px;color: rgb(61, 167, 66);">になりました。</span>（<span style="font-size: 15px;text-decoration: underline;">描述现象时可用が</span>代替は）</p>
+<p>③勉強<span style="font-size: 15px;color: rgb(61, 167, 66);">になりました。</span>长知识了。</p>
+<p>年になりました。上岁数了。</p>
+<p>大人になりました。变成熟了。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px66~~しますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px66~~しますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">66.～～します</span></h1>
+<p>因主语意志性动作引起变化，使……变化（人为的动作，让什么发生）<br>
+</p>
+<p>接续：形1：いーーく＋します；形2/名：＋にします</p>
+<p>例：</p>
+<p>①ジュースを冷た<span style="font-size: 15px;color: rgb(61, 167, 66);">くします</span>。把果汁冰镇一下。</p>
+<p>②部屋をきれい<span style="font-size: 15px;color: rgb(61, 167, 66);">にしてください</span>。把屋子收拾干净。</p>
+<p>③会議室を禁煙にします。会议室里禁烟。</p>
+<p>④アイスコーヒーを二つお願いします。来2杯冰咖啡。</p>
+<p>⑤どれ/なににしますか。アイスクリーム<span style="font-size: 15px;color: rgb(61, 167, 66);">にします</span>。你要哪个？我要冰淇淋。（名词+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">にします</span>表示一种决定）</p>
+<p>⑥結婚式はいつ<span style="font-size: 15px;color: rgb(61, 167, 66);">にします</span>か。四月<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;color: rgb(61, 167, 66);">にします</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">。</span>结婚典礼什么时候举行？决定在4月。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px67~~ほうがいいです的更span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px67~~ほうがいいです的更span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">67.～～ほうがいいです，……的更……</span></h1>
+<p>表示比较之后，认为其中一个比较……；多为陈述个人看法或对别人的建议</p>
+<p>接续：形1直接加；形2+な＋ほうがいい；名+の＋ほうがいい</p>
+<p>（把ほう当成名词，怎么接名词就怎么接ほうがいい）</p>
+<p>例：</p>
+<p>①ホテルは部屋が広<span style="font-size: 15px;color: rgb(61, 167, 66);">いほうがいい</span>です。宾馆还是房间宽敞点儿好。</p>
+<p>②パソコンは操作が簡単<span style="font-size: 15px;color: rgb(61, 167, 66);">なほうがいい</span>です。电脑还是操作简单的好。</p>
+<p>③赤いリンゴと青いリンゴとどちらがいいですか。红苹果和青苹果哪个好呢？</p>
+<p>ー赤い（りんごの）ほうがいいです。红色的（苹果）更好。</p>
+<p>ほうが后面可以换成别的形容词<br>
+</p>
+<p>魚は新鮮なほうが<span style="font-size: 15px;text-decoration: underline;">美味しい</span>です。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px68动词ない形未然形变法span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px68动词ない形未然形变法span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">68.动词ない形（未然形）变法</span></h1>
+<p>动1：去ます后イ段假名变ア段＋ない（<strong style="line-height: 25.6px;white-space: pre-wrap;">特殊：<strong style="line-height: 25.6px;">い变わ（如<span style="font-size: 15px;line-height: 25.6px;">洗わない）</span></strong></strong></p>
+<p>动2：<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">去ます<span style="font-size: 15px;line-height: 25.6px;">＋ない</span></span></p>
+<p><span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;">动3：<span style="font-size: 15px;line-height: 25.6px;">しますーしない；きますーこない；</span></span></p>
+<p>特殊：ありますーない</p>
+<p>例：</p>
+<p>書きますー書かない；<span style="font-size: 15px;line-height: 1.6;">泳ぎますー泳がない；</span></p>
+<p><span style="line-height: 1.6;font-size: 15px;">行きますー行かない；待ちますー待たない；</span></p>
+<p>帰りますー帰らない；死にますー死なない；<br>
+</p>
+<p>選びますー選ばない；読みますー読まない；</p>
+<p>消しますー消さない；洗いますー洗わない；</p>
+<p>見せますー見せない；起きますーおきない；</p>
+<p>しますーしない；きますーこない；</p>
+<p>買物しますーー買物しない</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px69动词ないでくださいspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px69动词ないでくださいspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">69.动词+ないでください</span></h1>
+<p>表示请求或命令他人不要做某事，口语形式：ないで</p>
+<p>用于下级或平级；对上级可用ないでくださいませんか<br>
+</p>
+<p>例：</p>
+<p>①吸<span style="font-size: 15px;color: rgb(61, 167, 66);">わ</span>ないで。不要吸我。</p>
+<p>②無理を<span style="font-size: 15px;color: rgb(61, 167, 66);">しないで</span>ください。别逞强。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px70动词なければなりませんないといけませんspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px70动词なければなりませんないといけませんspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">70.动词+なければなりません/ないといけません</span></h1>
+<p>“不得不……”，“应该……”，“必须……”</p>
+<p>例：</p>
+<p>①天野さんは今日早く帰ら<span style="font-size: 15px;color: rgb(61, 167, 66);">なければなりません。</span>天野先生今天不早点回去不行。</p>
+<p>②この薬は毎日飲ま<span style="font-size: 15px;color: rgb(61, 167, 66);">なきゃ</span>。这个药必须每天喝。</p>
+<p>③今週、本を返さ<span style="font-size: 15px;color: rgb(61, 167, 66);">ないといけませんか。</span>这星期必须还书吗。</p>
+<p>ーはい、かえさなければなりません。</p>
+<p>ーいえ、返さなくてもいいです。</p>
+<p>④ちゃんとし<span style="font-size: 15px;color: rgb(61, 167, 66);">ないと。</span>不好好干可不行/必须好好干。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px71动词なくてもいいですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px71动词なくてもいいですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">71.动词+なくてもいいです</span></h1>
+<p>表示不做某事也可以，“不……也可以”，“也可以不……”</p>
+<p>例：</p>
+<p>①明日は残業<span style="font-size: 15px;color: rgb(61, 167, 66);">しなくてもいいです。</span>明天不加班也可以。</p>
+<p>②慌てな<span style="font-size: 15px;color: rgb(61, 167, 66);">くてもいいですよ。</span>不用那么慌张。</p>
+<p>③靴を脱が<span style="font-size: 15px;color: rgb(61, 167, 66);">なくてもいいですか。</span>不脱鞋子也可以吗？</p>
+<p>ーはい、脱がなくてもいいです。</p>
+<p>ーいえ、ぬがなければなりません。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px72名词が名词ですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px72名词が名词ですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">72.名词が名词です</span></h1>
+<p>①新信息作主语</p>
+<p>桐野さんはいますか。－－私<span style="font-size: 15px;color: rgb(61, 167, 66);">が</span>桐野です。桐野先生在吗？我就是桐野。</p>
+<p>②客观描述</p>
+<p>バス<span style="font-size: 15px;color: rgb(61, 167, 66);">が</span>きました。公车来了。</p>
+<p>③疑问词做主语</p>
+<p>どこ<span style="font-size: 15px;color: rgb(61, 167, 66);">が</span>痛いですか。哪疼呢？</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px73动词的基本形原形辞书形span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px73动词的基本形原形辞书形span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">73.动词的基本形（原形/辞书形）</span></h1>
+<p>从ます形到基本形的变法：</p>
+<p>动1：去ます后い段变う段；</p>
+<p>动2：去ます+る</p>
+<p>动3：くる、する</p>
+<p>例：</p>
+<p>書きますーー書く；泳ぎますーー泳ぐ；</p>
+<p>洗いますーー洗う；待ちますーー待つ；</p>
+<p>帰りますーー帰る；死にますーー死ぬ；</p>
+<p>選びますーー選ぶ；読みますーー読む；</p>
+<p>消しますーー消す；行きますーー行く；</p>
+<p>見せますーー見せる；起きますーー起きる；</p>
+<p>しますーーする；きますーーくる；</p>
+<p>買物しますーー買物する</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px74~は动词原形ことができます形动すきにがてなどspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px74~は动词原形ことができます形动すきにがてなどspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">74.～は+动词原形＋ことができます/形/动（すき/にがてなど）</span></h1>
+<p>①做某事的能力②许可③可能性，“能……”，“会……”，“可以……”<br>
+</p>
+<p>こと把动词名词化</p>
+<p>接在动词原形后。</p>
+<p>例：</p>
+<p>①松下さんはピアノを<span style="font-size: 15px;color: rgb(61, 167, 66);">弾く</span>ことができます。松下小姐会弹钢琴。</p>
+<p>②松本さんは中華料理を<span style="font-size: 15px;color: rgb(61, 167, 66);">作る</span>ことができますか。松本先生会做中华料理吗？</p>
+<p>ーはい、できます/いいえ、できません。是的，会/不，不会。</p>
+<p>③５キロメートル泳ぐことができません。（能力）</p>
+<p>④教室でタバコを吸うことができません。（许可）</p>
+<p>⑤日本で寿司を食べることができます。（可能性）</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px75~は动词原形ことですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px75~は动词原形ことですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">75.～は+动词原形+ことです</span></h1>
+<p>表示对某一事物或现象进行解释说明，……是……</p>
+<p>例：</p>
+<p>①私の趣味<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>切手を集める<span style="font-size: 15px;color: rgb(61, 167, 66);">ことです。</span>我的爱好是集邮。</p>
+<p>②牧野さんの特技<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>ギターを弾く<span style="font-size: 15px;color: rgb(61, 167, 66);">ことです。</span>牧野小姐的特长是弹吉他。</p>
+<p>③木村さんの夢<span style="font-size: 15px;color: rgb(61, 167, 66);">は</span>自分の会社を作る<span style="font-size: 15px;color: rgb(61, 167, 66);">ことです。</span>木村先生的梦想是建立自己的公司。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">牧野さんの特技はギターを弾きます。X</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">因为句中主语不是人，而xxます是动作，表示主语进行某动作，”特技在弹琴“X</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">要表达A</span><em><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">是</span></span></em><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">B的意思，必须用は……</span><em><span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">です，です不能少</span></span></em></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap76~前に-~之前spanspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap76~前に-~之前spanspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;white-space: pre-wrap;">76.～前に、～，……之前</span></span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">表示动作的顺序，接续：动词原形+<strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">前<strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">に；名词+<span style="font-size: 15px;line-height: 25.6px;">の+<strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">前<strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">に</span></strong></span></strong></span></strong></span></span></strong></span></strong></span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><br>
+</span></strong></span></strong></span></strong></span></strong></span></strong></span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;"><strong style="line-height: 25.6px;"><span style="font-size: 15px;line-height: 25.6px;">例：</span></strong></span></strong></span></strong></span></strong></span></strong></span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">①こちらへ<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">来る前に</span>、電話をかけてください。来之前请打个电话。</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">②会議<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">の前に</span>、資料をきぴーします。会议开始前要把资料复印一��。</span></p>
+<span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap77疑问词かspanspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15pxspan-stylefont-size-15pxcolor-rgb0-128-255line-height-256pxwhite-space-pre-wrap77疑问词かspanspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;"><span style="font-size: 15px;color: rgb(0, 128, 255);line-height: 25.6px;white-space: pre-wrap;">77.疑问词+か</span></span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">表示不确定的名词，“某……”</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">疑问词+か本身不表示疑问，可用于非疑问句和疑问句中</span></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">例：</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">①<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">何か<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(0, 0, 0);">（を）</span></span>食べましょう。去吃点儿什么吧。</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">②<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">誰か<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(0, 0, 0);">（が）</span></span>答えてください。谁来回答一下。</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">③<span style="font-size: 15px;white-space: pre-wrap;line-height: 25.6px;color: rgb(61, 167, 66);">いつか</span>また出会うことができるだろう。会有一天再见面的吧。</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">④<span style="font-size: 15px;line-height: 25.6px;color: rgb(61, 167, 66);">どこかへ</span>いきましたか。你出去了吗，你去哪了？</span><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;text-decoration: underline;">（包含两层含义）</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">ーーええ、ｘｘへいきました。</span></p>
+<p><span style="line-height: 25.6px;white-space: pre-wrap;font-size: 15px;">ーーいえ、どこへもいきませんでした。（回答也回答两层含义）</span></p>
+<p>是个一般疑问句，要先回答“是和否“</p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">看不出来，不确定有没有xx，做没做xx，才用了疑问词+か这个句型，</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">如果已经确定对方出去了，就会直接问“どこへ”了。（内容）</span></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px78动词た形span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px78动词た形span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">78.动词た形</span></h1>
+<p>变法与て形一样，把て换成た，で换成だ</p>
+<p>动1：き/ぎーい＋た/だ；<span style="font-size: 15px;line-height: 1.6;">い、ち、りーっ＋た；</span><span style="font-size: 15px;line-height: 1.6;">に、び、みーんだ；</span><span style="font-size: 15px;line-height: 1.6;">しーした；</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;">（特殊：行きますーいった）</span></p>
+<p>动2：去ます＋た</p>
+<p>动3：した、きた</p>
+<p>例：</p>
+<p>書きます―書いた；<span style="font-size: 15px;max-width: 100%;line-height: 1.6;box-sizing: border-box !important;word-wrap: break-word !important;">泳ぎますー泳いだ；</span></p>
+<p><span style="font-size: 15px;line-height: 25.6px;">洗いますー洗った；</span><span style="font-size: 15px;line-height: 1.6;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">待ちますー待った；</span></p>
+<p><span style="font-size: 15px;line-height: 1.6;max-width: 100%;box-sizing: border-box !important;word-wrap: break-word !important;">帰りますー帰った；</span><span style="font-size: 15px;line-height: 25.6px;">死にますー死んだ；</span></p>
+<p><span style="line-height: 1.6;max-width: 100%;font-size: 15px;box-sizing: border-box !important;word-wrap: break-word !important;">選びますー選んだ；読みますー読んだ；</span></p>
+<p>消しますー消した；</p>
+<p>見せますー見せた；<span style="font-size: 15px;max-width: 100%;line-height: 1.6;box-sizing: border-box !important;word-wrap: break-word !important;">起きますー起きた；</span></p>
+<p>しますーした；<span style="font-size: 15px;max-width: 100%;line-height: 1.6;box-sizing: border-box !important;word-wrap: break-word !important;">来ますーき；</span></p>
+<p><span style="max-width: 100%;line-height: 1.6;font-size: 15px;box-sizing: border-box !important;word-wrap: break-word !important;">買物しますー買物した；コピーしますーコピーした</span></p>
+<span style="max-width: 100%;line-height: 1.6;font-size: 15px;box-sizing: border-box !important;word-wrap: break-word !important;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px79动词た形ことがありますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px79动词た形ことがありますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">79.动词た形+ことがあります</span></h1>
+<p>表示曾经有过某种经历</p>
+<p>接在动词た形后；一般动作的发生距离现在有一定的时间</p>
+<p>例：</p>
+<p>①ー村上さんの小説を読ん<span style="font-size: 15px;color: rgb(61, 167, 66);">だことがありますか。</span></p>
+<p>ーはい。</p>
+<p>ーどうでしたか。</p>
+<p>ーちょっと理解不能でした。</p>
+<p>②ー私は一度もカラオケに<span style="font-size: 15px;color: rgb(61, 167, 66);">行ったことがありません。</span></p>
+<p>ーじゃ、ぜひいきましょう。</p>
+<p>ーいつがいいですか。</p>
+<p>ーいつでもいいよ。</p>
+<p>先週、王さんにあったことがあります。ｘ</p>
+<p>不能这么说，不是描述经历，“我上周见过小王”只是过去式</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px80~後で-~-之后span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px80~後で-~-之后span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">80.～後で、～  ……之后</span></h1>
+<p>表示完成一件事后再做一件事</p>
+<p>接续：动词た形+後で；名词+の＋後で</p>
+<p>例：</p>
+<p>①谜解きはディナー<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>あとで。推理要在晚餐后</p>
+<p>②収録<span style="font-size: 15px;text-decoration: underline;">が</span>終わっ<span style="font-size: 15px;color: rgb(61, 167, 66);">た後で</span>、飲みに行こう。录制完后去喝一杯。</p>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">後で的从句主语与主句同一主语时，提示助词用は；但这里从句与主句主语不是同一个，从句的主语用が体现，不能是“收录去喝酒”</span></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px81动词た形ない形ほうがいいですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px81动词た形ない形ほうがいいですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">81.动词た形/ない形＋ほうがいいです</span></h1>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">建议或不建议对方做某事，“最好/最好别…”</span></p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<p><span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">例：</span></p>
+<p>①もう一度考え<span style="font-size: 15px;color: rgb(61, 167, 66);">たほうがいいですよ。</span>最好再考虑一下哟。</p>
+<p>②そんなに慌て<span style="font-size: 15px;color: rgb(61, 167, 66);">ないほうがいいですよ。</span>最好别那么慌张。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px82动词ます形ましょうかspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px82动词ます形ましょうかspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">82.动词ます形+ましょうか</span></h1>
+<p>①提议对方与自己一起做某事</p>
+<p>②向对方提议自己为对方做某事</p>
+<p>例：</p>
+<p>①明日映画を見に<span style="font-size: 15px;color: rgb(61, 167, 66);">行き</span>ましょうか。（＝～ませんか）</p>
+<p>②小野さん、（私が）車で<span style="font-size: 15px;color: rgb(61, 167, 66);">送り</span>ましょうか。（≠~ませんか）</p>
+<p>ーお願いします、すみません。</p>
+<p>ー大丈夫です、<span style="font-size: 15px;line-height: 25.6px;">ありがとうございます</span></p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px83简体形与敬体形的转换span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px83简体形与敬体形的转换span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">83.简体形与敬体形的转换</span></h1>
+<p>敬体形：～ます；～です  用于长辈、不太亲密的人/书信</p>
+<p>简体形：自己的同辈或晚辈、关系较密切的人/日记文章</p>
+<p>变法：</p>
+<p>①动词：（非过去）肯定ー基本形；否定ーない形；（过去）肯定ーた形；否定ーな形+なかった</p>
+<p>②形1：把です去掉</p>
+<p>③形2/名：<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">（非过去式）肯定ー</span>だ；否定<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">ー</span>ではない/じゃない；<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">（过去式）肯定ー</span>だった；<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">否定ー</span>ではなかった/じゃなかった</p>
+<p>例：</p>
+<p>買います―買いません―買いました―買いませんでした</p>
+<p>買う―買わない―買った―買わなかった</p>
+<p>ありますーありませんーありましたーありませんでした</p>
+<p>あるーないーあったーなかった</p>
+<p>きますーきませんーきましたーきませんでした<br>
+</p>
+<p>くるーこないーきたーこなかった</p>
+<p>いいですーよくないですーよかったですーよくなかったです<br>
+</p>
+<p>いいーよくないーよかったーよくなかった</p>
+<p>愛です―愛ではありません―愛でしたー愛ではありませんでした<br>
+</p>
+<p>愛だー愛ではないー愛だったー愛ではなかった</p>
+<p>①このほん（を）借りでもいい（か）？（口语中<strong style="line-height: 25.6px;white-space: pre-wrap;">疑问句可省略か，因为省略了か要用？体现问句；不会引起歧义的助词可省略）</strong></p>
+<p>今森さん電話かけた。X　（我打电话给森？森打电话？） X</p>
+<p>②今電話かけて（い）る。（口语中<strong style="line-height: 1.6;white-space: pre-wrap;">ている中的い可省）</strong></p>
+<p>③誰が好き（だ）（か）？（口语中常省略形2/名词词尾だ，尤其是女性）</p>
+<span style="font-size: 15px;line-height: 25.6px;white-space: pre-wrap;">
+</span>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px84~たり~たりしますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px84~たり~たりしますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">84.～たり～たりします</span></h1>
+<p>接续：动词た形<br>
+</p>
+<p>列举动作，暗示还有其他动作，“做做……啦，做做……啊”</p>
+<p>可以只举一个たり</p>
+<p>时态、简体都在句尾します上变</p>
+<p>例：</p>
+<p>①毎日、本を読ん<span style="font-size: 15px;color: rgb(61, 167, 66);">だりします。</span>我每天看看书啊什么的。</p>
+<p>②引っ越しの前に、片付け<span style="font-size: 15px;color: rgb(61, 167, 66);">したり</span>、ごみを出<span style="font-size: 15px;color: rgb(61, 167, 66);">したりします。</span>搬家之前收拾收拾屋子扔扔垃圾什么的。</p>
+<p>③彼に聞い<span style="font-size: 15px;color: rgb(61, 167, 66);">たり</span>インタネットで調べ<span style="font-size: 15px;color: rgb(61, 167, 66);">たり</span>してください。向他问一下啦在网上查一下啦。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px85~たり~たりですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px85~たり~たりですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">85.～たり～たりです</span></h1>
+<p>接续：形1ー去词尾い＋かったり；形2/名―だったり</p>
+<p>列举，表示多种状态的并存或交替反复，“有的……有的……”，“有时……有时……”</p>
+<p>例：</p>
+<p>①飛行機のチケットは季節によって、高<span style="font-size: 15px;color: rgb(61, 167, 66);">かったり</span>安<span style="font-size: 15px;color: rgb(61, 167, 66);">かったり</span><span style="font-size: 15px;color: rgb(61, 167, 66);text-decoration: underline;">です/します</span><span style="font-size: 15px;color: rgb(61, 167, 66);">。</span>机票根据季节有时贵有时便宜。</p>
+<p>②仕事は日によって、暇<span style="font-size: 15px;color: rgb(61, 167, 66);">だったり</span>、忙し<span style="font-size: 15px;color: rgb(61, 167, 66);">かったりです。</span>工作根据日子不同有时闲有时忙。<br>
+</p>
+<p>③休みは土曜日<span style="font-size: 15px;color: rgb(61, 167, 66);">だったり</span>日曜日<span style="font-size: 15px;color: rgb(61, 167, 66);">だったりです</span>。（交替/反复）</p>
+<p>④教授は中国人<span style="font-size: 15px;color: rgb(61, 167, 66);">だったり</span>、日本人<span style="font-size: 15px;color: rgb(61, 167, 66);">だったりです。</span>（并存）</p>
+<p>表示交替反复时，不管词性，后面既可用します也可用です</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px86~かどうか是否span"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px86~かどうか是否span"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">86.～かどうか，是否……</span></h1>
+<p>接续：一般疑问句简体，形2/名词不用だ直接加か</p>
+<p>也可以使用肯定+か、否定+か/反对语+か的形式</p>
+<p>例：</p>
+<p>①あの人は中国人<span style="font-size: 15px;color: rgb(61, 167, 66);">かどうか</span>知っていますか。你知道那个人是不是中国人吗？</p>
+<p>②（あなたは）映画が<span style="font-size: 15px;color: rgb(61, 167, 66);">始まったかどうか</span>聞いてください。你去问一下电影开始了没有。</p>
+<p>③その本は<span style="font-size: 15px;color: rgb(61, 167, 66);">面白いかつまらないか</span>あなた次第だ。那本书是有趣还是无聊由你自己决定的。</p>
+<p>④<span style="font-size: 15px;color: rgb(61, 167, 66);">できるかできないか</span>じゃない、<span style="font-size: 15px;color: rgb(61, 167, 66);">やるかやらないか</span>だ。不是能不能的问题，是做不做的问题。</p>
+<p>⑤キムさんが旅行に行くかどうか聞きましたか。（“<span style="font-size: 15px;text-decoration: underline;">你”</span>听说xx了吗？が只管到最近的动词）</p>
+<p>キムさんは旅行に行くかどうか聞きましたか。（<span style="font-size: 15px;text-decoration: underline;">小金</span>听说了吗，は管到句末）</p>
+<p>从句主语用が。/或当从句主语如果产生歧义时はーが<br>
+</p>
+
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px87~かspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px87~かspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">87.～か</span></h1>
+<p>将特殊疑问<span style="font-size: 15px;color: rgb(0, 128, 255);"></span>句放在另一句子中</p>
+<p>接续：特殊疑问句简体，形2/名词去掉だ直接加か</p>
+<p>例：</p>
+<p>①結婚相手はどんな人<span style="font-size: 15px;color: rgb(61, 167, 66);">か</span>分かりません。我不知道结婚对象是个什么样的人。</p>
+<p>②鍵がどこにいる<span style="font-size: 15px;color: rgb(61, 167, 66);">か</span>教えてください。请告诉我钥匙在哪。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px88小句简体と思いますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px88小句简体と思いますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">88.小句简体+と思います</span></h1>
+<p>と：提示内容，表达个人见解、推测</p>
+<p>＊注意形2/名词别忘了だ</p>
+<p>＊主语不能为第三人称，～と思います不能用于描述第三人称的想法</p>
+<p>若描述第三人称的想法可用～と思っています；～と思っていました（有现在则不这么认为的意思）</p>
+<p>小句子主语引起歧义时はーが</p>
+<p>例：</p>
+<p>①（あなたは）明日はいい天気<span style="font-size: 15px;color: rgb(61, 167, 66);">だと思いますか</span>。你觉得明天是好天气吗？</p>
+<p>②その店は、高い<span style="font-size: 15px;color: rgb(61, 167, 66);">と</span>思います。我觉得那间店很贵。</p>
+<p>③ー日本語の勉強について<span style="font-size: 15px;color: rgb(61, 167, 66);">どう思いますか</span>。关于日语学习你觉得怎样？</p>
+<p>ー私は難し<span style="font-size: 15px;color: rgb(61, 167, 66);">と思います</span>けど、小春は簡単だ<span style="font-size: 15px;color: rgb(61, 167, 66);">と思っています。</span><span style="font-size: 15px;line-height: 25.6px;">我认为很难，但小春却觉得很简单。</span></p>
+<p>④課長<span style="font-size: 15px;color: rgb(61, 167, 66);">は/が</span>来ると思わなかった。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px89~と言いますspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px89~と言いますspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">89.～と言います</span></h1>
+<p>接续：「直接引语」；间接引语的小句简体</p>
+<p>と：提示内容</p>
+<p>＊注意形2/名词别忘了だ</p>
+<p><strong style="line-height: 25.6px;">小句子主语引起歧义时はーが</strong></p>
+<strong style="line-height: 25.6px;">
+</strong>
+<p>例：</p>
+<p>①リンさんはお客さんに<span style="font-size: 15px;text-decoration: underline;"><span style="font-size: 15px;color: rgb(61, 167, 66);">「</span>ありがとうございました<span style="font-size: 15px;color: rgb(61, 167, 66);">」</span></span>と言いました。</p>
+<p>②鈴木さんはあの女性がきれい<span style="font-size: 15px;color: rgb(61, 167, 66);">だと言っています。</span>（反复、经常说起的内容）</p>
+<p>③彼は<span style="font-size: 15px;color: rgb(61, 167, 66);">なんと言いましたか</span>。</p>
+<h1 id="span-stylecolor-rgb0-128-255font-size-15px90小句简体のですんですspan"><a class="markdownIt-Anchor" href="#span-stylecolor-rgb0-128-255font-size-15px90小句简体のですんですspan"></a> <span style="color: rgb(0, 128, 255);font-size: 15px;">90.小句简体＋のです/んです</span></h1>
+<p><span style="font-size: 15px;line-height: 1.6;">形2/名词的だ改成な</span></p>
+<span style="font-size: 15px;line-height: 1.6;">
+</span>
+<p><span style="font-size: 15px;line-height: 1.6;">①陈述句：对某种已存现象主动进行解释说明</span></p>
+<p>―あの人は日本語が上手ですね。那个人日语真溜。</p>
+<p>―あの人は日本に三年ぐらい住んでいた<span style="font-size: 15px;color: rgb(61, 167, 66);">んですよ。</span>他在日本住了有三年了嘛。</p>
+<p>勉強しましたが、合格には無理なんです。虽然学校了，但是是合不了格的。<br>
+</p>
+<p>②疑问句：要求对方对某种已存现象进行解释说明</p>
+<p>ニンジンを食べない<span style="font-size: 15px;color: rgb(61, 167, 66);">の</span>？你怎么不吃胡萝卜？</p>
+<p>③～のですが/んですが对后续的内容进行渲染、铺垫，起承上启下的作用</p>
+<p>李さんを探している<span style="font-size: 15px;color: rgb(61, 167, 66);">んですが</span>、どこにいるか知っていますか。我在找小李，你知道她在哪儿吗？</p>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">坂本先生</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bugbugsurvival.github.io/posts/japanese_grammar_01.jp.html">https://bugbugsurvival.github.io/posts/japanese_grammar_01.jp.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bugbugsurvival.github.io">東雲研究所</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%97%A5%E8%AF%AD/">日语    </a><a class="post-meta__tags" href="/tags/%E6%96%B0%E6%A0%87%E6%97%A5/">新标日    </a><a class="post-meta__tags" href="/tags/%E6%97%A5%E8%AF%AD%E8%AF%AD%E6%B3%95/">日语语法    </a></div><div class="post_share"><div class="addtoany"><div class="a2a_kit a2a_kit_size_32 a2a_default_style"><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_wechat"></a><a class="a2a_button_sina_weibo"></a><a class="a2a_button_facebook_messenger"></a><a class="a2a_button_email"></a><a class="a2a_button_copy_link"></a><a class="a2a_dd" href="https://www.addtoany.com/share" target="_blank" rel="noopener"></a></div></div><script async src="https://static.addtoany.com/menu/page.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/posts/japanese_grammar_02.jp.html"><img class="prev_cover lazyload" data-src="/img/4.JPG" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>新标日初级下册 语法详解</span></div></a></div><div class="next-post pull_right"><a href="/posts/IELTS_vocabulary_part03.html"><img class="next_cover lazyload" data-src="/img/8.JPG" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>雅思单词 第三部分[完]</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/posts/japanese_grammar_04.jp.html" title="新标日中级下册 语法详解"><img class="relatedPosts_cover lazyload"data-src="/img/3.JPG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-02-04</div><div class="relatedPosts_title">新标日中级下册 语法详解</div></div></a></div><div class="relatedPosts_item"><a href="/posts/japanese_grammar_03.jp.html" title="新标日中级上册 语法详解"><img class="relatedPosts_cover lazyload"data-src="/img/6.JPG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-02-03</div><div class="relatedPosts_title">新标日中级上册 语法详解</div></div></a></div><div class="relatedPosts_item"><a href="/posts/japanese_grammar_02.jp.html" title="新标日初级下册 语法详解"><img class="relatedPosts_cover lazyload"data-src="/img/4.JPG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-02-02</div><div class="relatedPosts_title">新标日初级下册 语法详解</div></div></a></div><div class="relatedPosts_item"><a href="/posts/japanese_vocabulary_part01.html" title="日语单词 基本生活"><img class="relatedPosts_cover lazyload"data-src="/img/7.JPG"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-01</div><div class="relatedPosts_title">日语单词 基本生活</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div id="lv-container" data-id="city" data-uid="MTAyMC80Mjc2NS8xOTMxMg=="><script>(function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+})(document, 'script');</script></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2020 By 坂本先生</div><div class="footer_custom_text">日々私たちが過ごしている日常は、実は、奇跡の連続なのかもしれない。<br>我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
